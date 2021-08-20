@@ -11681,6 +11681,10 @@ fieldset:disabled .btn {
   background: linear-gradient(to right, #9926f0, #d122e3);
 }
 
+.gradient {
+  background: linear-gradient(to right, #9926f0, #d122e3);
+}
+
 .achievements_card {
   background-color: white;
   padding: 2rem 1.25rem;
@@ -11727,6 +11731,141 @@ fieldset:disabled .btn {
 .achievements_name p {
   padding-bottom: 2rem;
   text-transform: capitalize;
+}
+
+.portfolio {
+  padding: 4rem 0;
+  background-color: #d122e3;
+}
+
+.portfolio button {
+  text-transform: capitalize;
+}
+
+.portfolio-box {
+  position: relative;
+  width: 100%;
+  height: 18.5rem;
+  overflow: hidden;
+  margin-bottom: 1.2rem;
+  border-top: 0.5rem solid #d122e3;
+}
+
+.portfolio-box img {
+  width: 100%;
+  height: 100%;
+}
+
+/* .portfolio-bginfo {
+  background-color: #d122e3;
+  opacity: 0.6;
+  visibility: hidden;
+} */
+
+.portfolio-info {
+  background-color: #9926f0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.caption {
+  text-align: center;
+  color: white;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.caption h4 {
+  text-transform: uppercase;
+  display: block;
+}
+
+.portfolio-box:hover .portfolio-info {
+  visibility: visible;
+  opacity: 1;
+  transition-duration: 1000ms;
+  transition-property: all;
+}
+
+/* Transition */
+/* transition-duration: 1000ms;
+transition-property: all; */
+
+.get-started {
+  padding: 4rem 0;
+  background-color: #e1f8ee;
+}
+
+.cta-info {
+  padding: 3rem;
+  margin: 1rem 0;
+}
+
+.cta-info-list {
+  position: relative;
+  display: block;
+  list-style-type: none;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.cta-info-list li:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f101";
+  font-weight: 600;
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.form {
+  padding: 3rem;
+}
+
+.form button {
+  border: none;
+  color: white;
+}
+
+.form a {
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.footer {
+  padding-top: 1rem;
+  background-color: black;
+}
+
+.contact-box {
+  position: relative;
+  padding-left: 5rem;
+}
+
+.contact-box-info {
+  padding: 0.3rem;
+  font-weight: 600;
+  padding-left: 1rem;
+}
+
+.contact-box-info-title {
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.contact-box-info-subtitle {
+  font-size: 1rem;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
