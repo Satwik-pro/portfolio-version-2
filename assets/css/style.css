@@ -11614,6 +11614,30 @@ fieldset:disabled .btn {
   background-color: #9926f0;
 }
 
+.heading-line2::before {
+  content: "";
+  width: 20rem;
+  height: 0.1rem;
+  margin: 0 auto;
+  display: block;
+  background-color: black;
+}
+
+.heading-line2::after {
+  content: "";
+  width: 10rem;
+  padding-top: 0.5rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  height: 0.2rem;
+  display: block;
+  background-color: black;
+}
+
+.bttn:hover {
+  background-color: black;
+}
+
 .companies {
   padding: 0 0 5rem 0;
 }
@@ -11855,6 +11879,7 @@ transition-property: all; */
   padding: 0.3rem;
   font-weight: 600;
   padding-left: 1rem;
+  color: white;
 }
 
 .contact-box-info-title {
@@ -11863,9 +11888,37 @@ transition-property: all; */
   font-size: 1.4rem;
 }
 
+.contact-box-info-title:hover {
+  color: white;
+}
+
 .contact-box-info-subtitle {
   font-size: 1rem;
   color: white;
+}
+
+.footer-sm {
+  color: white;
+}
+
+.footer-sm a i {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  color: white;
+}
+
+.footer-bottom {
+  background-color: black;
+}
+
+.footer-bottom-copyright {
+  color: white;
+  font-weight: 400;
+}
+
+.footer-bottom-copyright a {
+  color: white;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
