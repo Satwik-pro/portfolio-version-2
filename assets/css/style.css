@@ -11638,6 +11638,20 @@ fieldset:disabled .btn {
   background-color: black;
 }
 
+@media screen and (max-width: 767px) {
+  .bttn {
+    display: flex;
+    margin-bottom: 2px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .dev-sm {
+    display: block;
+    align-items: center;
+  }
+}
+
 .companies {
   padding: 0 0 5rem 0;
 }
@@ -11712,7 +11726,7 @@ fieldset:disabled .btn {
 .achievements_card {
   background-color: white;
   padding: 2rem 1.25rem;
-  height: auto;
+  height: 250px;
   text-align: center;
 }
 
@@ -11724,6 +11738,50 @@ fieldset:disabled .btn {
 .ratings i {
   color: #9926f0;
   font-size: 1rem;
+  position: absolute;
+  top: 40%;
+}
+
+.a1 {
+  left: 53%;
+}
+
+.a2 {
+  left: 51%;
+}
+
+.a3 {
+  left: 49%;
+}
+
+.a4 {
+  left: 47%;
+}
+
+.a5 {
+  left: 45%;
+}
+
+@media screen and (max-width: 767px) {
+  .a1 {
+    left: 60%;
+  }
+
+  .a2 {
+    left: 54%;
+  }
+
+  .a3 {
+    left: 48%;
+  }
+
+  .a4 {
+    left: 42%;
+  }
+
+  .a5 {
+    left: 36%;
+  }
 }
 
 .achievements_pic {
