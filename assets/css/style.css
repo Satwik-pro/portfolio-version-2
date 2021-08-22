@@ -11712,7 +11712,6 @@ fieldset:disabled .btn {
 .achievements_card {
   background-color: white;
   padding: 2rem 1.25rem;
-  /* border-radius: 0.625rem; */
   height: auto;
   text-align: center;
 }
