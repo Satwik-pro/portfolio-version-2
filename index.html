@@ -36,6 +36,9 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#workexp">Work Experience</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
@@ -256,9 +259,87 @@
           </div>
         </div>
       </div>
-      <div id="projects"></div>
     </section>
 
+    <!-- Work Experience -->
+
+    <section id="workexp" class="experience">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,32L0,192L288,192L288,224L576,224L576,128L864,128L864,224L1152,224L1152,96L1440,96L1440,0L1152,0L1152,0L864,0L864,0L576,0L576,0L288,0L288,0L0,0L0,0Z"></path></svg>
+      <div class="container">
+        <div class="row text-center text-white">
+          <h1 class="display-3 fw-bold">Work Experience</h1>
+            <hr style="width: 200px; height: 3px;" class="mx-auto">
+            <p class="lead pt1">My work experience with the above mentioned comapnies are listed below in detail.</p>
+        </div>
+        <nav style="background: linear-gradient(to right, #d122e3 , #9926f0);" id="navbar-example2" class="navbar shadow px-3">
+          <span style="color: white;" class="navbar-brand">Work Summary</span>
+          <ul class="nav nav-pills">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="background-color: white" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><span style="color: #9926f0">Companies</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#scrollspyHeading1">ClearExam</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#scrollspyHeading2">PupilFirst School</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="work-desc" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+          <div id="scrollspyHeading1" style="display: flex;">
+            <img src="images/clearexamlogo.jfif" alt="" class="expimage">
+            <h3 class="display-3--title mt-1">ClearExam</h3>
+          </div>
+          <p>
+            <ul class="cta-info-lis">
+              <li>Job Type: Internship</li>
+              <li>Role: Frontend Developer and Team Leader</li>
+              <li>Duration: Two months</li>
+              <li>Led a team of 12 members</li>
+              <li>Wrote code template for the quiz in HTML, CSS & JavaScript.</li>
+              <li>Edited the template by replacing different questions and made a total of 27 quizzes.</li>
+              <li>Tech Stacks used: Replit, Blogger, VS Code, Excel & Github</li>
+            </ul>
+          </p>&emsp;
+          <button type="button" class="rounded-pill btn-rounded" style="border-color: #d122e3;" onclick="window.open('images/ClearExam Internship Certificate.pdf')">
+            Certificate
+            <span>
+              <i class="fas fa-arrow-right"></i>
+            </span>
+          </button>
+          <br><br><br><br>
+          <div id="scrollspyHeading2" style="display: flex;">
+            <img src="images/pupilfirstlogo.jfif" alt="" class="expimage">
+            <h3 class="display-3--title mt-1">PupilFirst School</h3>
+          </div>
+          <p>
+            <ul class="cta-info-lis">
+              <li>Job Type: Internship cum course</li>
+              <li>Role: Full Stack Web Development Trainee</li>
+              <li>Duration: Two months</li>
+              <li>Mentor: Mr. Prashanth Reddy Koteru & Mr. Mahesh Krishna Kumar</li>
+              <li>Made one static and two dynamic web applications.</li>
+              <li>Tech Stacks used: HTML, CSS, JavaScript, Ruby on Rails, PostgreSQL, VS Code, Windows Subsystem for Linux, Heroku, Github.</li>
+            </ul>
+          </p>
+          &emsp;
+          <button type="button" class="rounded-pill btn-rounded" style="border-color: #d122e3;" onclick="window.open('images/Pupilfirst Internship Certificate.pdf')">
+            Certificate
+            <span>
+              <i class="fas fa-arrow-right"></i>
+            </span>
+          </button>
+          <br><br>
+        </div>
+        <div id="projects"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#ffffff"
+            fill-opacity="1"
+            d="M0,256L0,96L288,96L288,192L576,192L576,128L864,128L864,160L1152,160L1152,64L1440,64L1440,320L1152,320L1152,320L864,320L864,320L576,320L576,320L288,320L288,320L0,320L0,320Z"
+          >
+          </path>
+        </svg>
+    </section>
 
     <!-- Projects -->
 
@@ -501,7 +582,7 @@
       <div class="container">
         <div class="row text-center text-white">
           <h1 class="display-3 fw-bold">Achievements</h1>
-            <hr style="width: 100px; height: 3px;" class="mx-auto">
+            <hr style="width: 150px; height: 3px;" class="mx-auto">
             <p class="lead pt1">Some of my carrier achievements are listed below</p>
         </div>
 
@@ -778,7 +859,8 @@
       <div class="container">
         <div class="row text-center mt-0">
           <h1 class="display-3 fw-bold text-capitalize">Work Samples</h1>
-          <div class="heading-line2"></div>
+          <!-- <div class="heading-line2"></div> -->
+          <hr style="width: 200px; height: 3px;" class="mx-auto">
           <p class="lead">Here are few of my screenshots showcasing my work samples on the above mentioned skills and achievements</p>
         </div>
 

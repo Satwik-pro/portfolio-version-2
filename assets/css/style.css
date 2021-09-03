@@ -11979,4 +11979,46 @@ transition-property: all; */
   text-decoration: none;
 }
 
+.experience {
+  background: linear-gradient(to right, #9926f0, #d122e3);
+}
+
+.expimage {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+}
+
+.work-desc {
+  background-color: white;
+  max-height: 380px;
+  overflow: scroll;
+}
+
+@media screen and (max-width: 767px) {
+  .work-desc {
+    background-color: white;
+    overflow: scroll;
+    max-height: 440px;
+  }
+}
+
+.cta-info-lis {
+  position: relative;
+  display: block;
+  list-style-type: none;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.cta-info-lis li:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0a3";
+  color: #9926f0;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
 /*# sourceMappingURL=style.css.map */
