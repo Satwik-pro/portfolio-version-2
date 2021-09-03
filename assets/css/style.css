@@ -11989,6 +11989,10 @@ transition-property: all; */
   padding: 5px;
 }
 
+.exp-class {
+  background: linear-gradient(to right, #d122e3 , #9926f0);
+}
+
 .work-desc {
   background-color: white;
   max-height: 380px;
