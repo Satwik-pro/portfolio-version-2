@@ -879,16 +879,16 @@
 
         <div class="row mt-5 mb-4 g-3 text-center">
           <div class="col-md-12 dev-sm">
-            <button class="btn btn-outline-light text-white bttn" type="button">All</button>
-            <button class="btn btn-outline-light text-white bttn" type="button">Competitive Programming</button>
-            <button class="btn btn-outline-light text-white bttn" type="button">Frontend Development</button>
-            <button class="btn btn-outline-light text-white bttn" type="button">Backend Development</button>
+            <button id="all" class="btn btn-outline-light text-white bttn" type="button" onclick="showrequired(this)">All</button>
+            <button id="cp" class="btn btn-outline-light text-white bttn" type="button" onclick="showrequired(this)">Competitive Programming</button>
+            <button id="fd" class="btn btn-outline-light text-white bttn" type="button" onclick="showrequired(this)">Frontend Development</button>
+            <button id="bd" class="btn btn-outline-light text-white bttn" type="button" onclick="showrequired(this)">Backend Development</button>
           </div>
         </div>
 
         <div class="row">
 
-          <div class="col-lg-4 col-md-6">
+          <div id="image-number0" class="col-lg-4 col-md-6">
             <div class="portfolio-box shadow">
               <img src="images/p1.JPG" alt="" class="img-fluid">
               <div class="portfolio-info">
@@ -900,7 +900,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6">
+          <div id="image-number1" class="col-lg-4 col-md-6">
             <div class="portfolio-box shadow">
               <img src="images/p2.JPG" alt="" class="img-fluid">
               <div class="portfolio-info">
@@ -912,7 +912,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6">
+          <div id="image-number2" class="col-lg-4 col-md-6">
             <div class="portfolio-box shadow">
               <img src="images/p3.JPG" alt="" class="img-fluid">
               <div class="portfolio-info">
@@ -924,7 +924,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6">
+          <div id="image-number3" class="col-lg-4 col-md-6">
             <div class="portfolio-box shadow">
               <img src="images/p4.JPG" alt="" class="img-fluid">
               <div class="portfolio-info">
@@ -936,7 +936,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6">
+          <div id="image-number4" class="col-lg-4 col-md-6">
             <div class="portfolio-box shadow">
               <img src="images/p5.JPG" alt="" class="img-fluid">
               <div class="portfolio-info">
@@ -948,7 +948,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6">
+          <div id="image-number5" class="col-lg-4 col-md-6">
             <div class="portfolio-box shadow">
               <img src="images/p16.JPG" alt="" class="img-fluid">
               <div class="portfolio-info">
@@ -960,7 +960,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6">
+          <div id="image-number6" class="col-lg-4 col-md-6">
             <div class="portfolio-box shadow">
               <img src="images/p7.JPG" alt="" class="img-fluid">
               <div class="portfolio-info">
@@ -972,7 +972,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6">
+          <div id="image-number7" class="col-lg-4 col-md-6">
             <div class="portfolio-box shadow">
               <img src="images/p6.JPG" alt="" class="img-fluid">
               <div class="portfolio-info">
@@ -984,7 +984,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6">
+          <div id="image-number8" class="col-lg-4 col-md-6">
             <div class="portfolio-box shadow">
               <img src="images/p17.JPG" alt="" class="img-fluid">
               <div class="portfolio-info">
@@ -996,7 +996,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6">
+          <div id="image-number9" class="col-lg-4 col-md-6">
             <div class="portfolio-box shadow">
               <img src="images/p9.JPG" alt="" class="img-fluid">
               <div class="portfolio-info portfolio-bginfo">
@@ -1008,7 +1008,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6">
+          <div id="image-number10" class="col-lg-4 col-md-6">
             <div class="portfolio-box shadow">
               <img src="images/p11.JPG" alt="" class="img-fluid">
               <div class="portfolio-info">
@@ -1020,7 +1020,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6">
+          <div id="image-number11" class="col-lg-4 col-md-6">
             <div class="portfolio-box shadow">
               <img src="images/p13.JPG" alt="" class="img-fluid">
               <div class="portfolio-info">
@@ -1032,7 +1032,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6">
+          <div id="image-number12" class="col-lg-4 col-md-6">
             <div class="portfolio-box shadow">
               <img src="images/p15.JPG" alt="" class="img-fluid">
               <div class="portfolio-info">
@@ -1044,7 +1044,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6">
+          <div id="image-number13" class="col-lg-4 col-md-6">
             <div class="portfolio-box shadow">
               <img src="images/p18.JPG" alt="" class="img-fluid">
               <div class="portfolio-info">
@@ -1056,7 +1056,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6">
+          <div id="image-number14" class="col-lg-4 col-md-6">
             <div class="portfolio-box shadow">
               <img src="images/p14.JPG" alt="" class="img-fluid">
               <div class="portfolio-info">
@@ -1068,7 +1068,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6">
+          <div id="image-number15" class="col-lg-4 col-md-6">
             <div class="portfolio-box shadow">
               <img src="images/p8.JPG" alt="" class="img-fluid">
               <div class="portfolio-info">
@@ -1080,7 +1080,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6">
+          <div id="image-number16" class="col-lg-4 col-md-6">
             <div class="portfolio-box shadow">
               <img src="images/p10.JPG" alt="" class="img-fluid">
               <div class="portfolio-info">
@@ -1092,7 +1092,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6">
+          <div id="image-number17" class="col-lg-4 col-md-6">
             <div class="portfolio-box shadow">
               <img src="images/p12.JPG" alt="" class="img-fluid">
               <div class="portfolio-info">
@@ -1294,3 +1294,43 @@
     ></script>
   </body>
 </html>
+
+<script>
+  total = 18;
+  cpid = [0, 1, 2, 3, 4, 5, 6, 7];
+  fdid = [8, 9, 10, 11, 12, 13, 14];
+  bdid = [8, 15, 16, 17];
+  function showrequired(html) {
+    for(var i=0; i<total; i++) {
+      var s = "image-number";
+      if (html.id == "all") {
+        if(document.getElementById(s + i).classList.contains("d-none"))
+        document.getElementById(s + i).classList.remove("d-none");
+      } else if (html.id == "cp") {
+        if (cpid.includes(i)) {
+          if(document.getElementById(s + i).classList.contains("d-none"))
+          document.getElementById(s + i).classList.remove("d-none");
+        } else {
+          if(!document.getElementById(s + i).classList.contains("d-none"))
+          document.getElementById(s + i).classList.add("d-none");
+        }
+      } else if (html.id == "fd") {
+        if (fdid.includes(i)) {
+          if(document.getElementById(s + i).classList.contains("d-none"))
+          document.getElementById(s + i).classList.remove("d-none");
+        } else {
+          if(!document.getElementById(s + i).classList.contains("d-none"))
+          document.getElementById(s + i).classList.add("d-none");
+        }
+      } else if (html.id == "bd") {
+        if (bdid.includes(i)) {
+          if(document.getElementById(s + i).classList.contains("d-none"))
+          document.getElementById(s + i).classList.remove("d-none");
+        } else {
+          if(!document.getElementById(s + i).classList.contains("d-none"))
+          document.getElementById(s + i).classList.add("d-none");
+        }
+      }
+    }
+  }
+</script>
