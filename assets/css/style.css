@@ -11687,6 +11687,24 @@ fieldset:disabled .btn {
   padding: 1rem 0;
 }
 
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile {
+    display: block;
+  }
+
+  .pc-1 {
+    display: none;
+  }
+
+  .pc-2 {
+    display: none;
+  }
+}
+
 .services-content {
   padding: 1rem;
   margin-top: 5rem;
