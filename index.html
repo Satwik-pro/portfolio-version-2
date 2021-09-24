@@ -17,6 +17,7 @@
         <img src="images/name.JPG" class="img-size" alt="Satwik-Logo">
         </a> -->
         <button
+          id="navbar-tog"
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -33,25 +34,25 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a onclick="toggle()" class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#workexp">Work Experience</a>
+              <a onclick="toggle()" class="nav-link" href="#workexp">Work Experience</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
+              <a onclick="toggle()" class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#achievements">Achievements</a>
+              <a onclick="toggle()" class="nav-link" href="#achievements">Achievements</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#myskills">Skills</a>
+              <a onclick="toggle()" class="nav-link" href="#myskills">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Work Samples</a>
+              <a onclick="toggle()" class="nav-link" href="#portfolio">Work Samples</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a onclick="toggle()" class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
           <button type="button" class="rounded-pill btn-rounded" onclick="window.open('tel:9354025808')">
@@ -833,6 +834,34 @@
                 <div class="achievements_card">
                   <p class="lh-lg">
                     <i class="fas fa-quote-left"></i>
+                    LinkedIn Certified Software Developer
+                    <i class="fas fa-quote-right"></i>
+                    <div class="ratings p-1">
+                      <i class="fas fa-star a1"></i>
+                      <i class="fas fa-star a2"></i>
+                      <i class="fas fa-star a3"></i>
+                      <i class="fas fa-star a4"></i>
+                      <i class="fas fa-star a5"></i>
+                    </div>
+                  </p>
+                </div>
+                <div class="achievements_pic">
+                  <img src="https://www.freeiconspng.com/uploads/linkedin-icon-8.png" alt="" class="rounded-circle img-fluid">
+                </div>
+                <div class="achievements_name">
+                  <h3>LinkedIn</h3>
+                  <p class="fw-light">An Online Course Provider & Social Media Platform</p>
+                </div>
+
+              </div>
+
+              <!-- THREE -->
+
+              <div class="carousel-item">
+
+                <div class="achievements_card">
+                  <p class="lh-lg">
+                    <i class="fas fa-quote-left"></i>
                     #2 in Amity University Noida in GeeksForGeeks LeaderBoard
                     <i class="fas fa-quote-right"></i>
                     <div class="ratings p-1">
@@ -854,7 +883,7 @@
 
               </div>
 
-              <!-- THREE -->
+              <!-- FOUR -->
 
               <div class="carousel-item">
 
@@ -882,7 +911,7 @@
 
               </div>
 
-              <!-- FOUR -->
+              <!-- FIVE -->
 
               <div class="carousel-item">
 
@@ -910,7 +939,7 @@
 
               </div>
 
-              <!-- FIVE -->
+              <!-- SIX -->
 
               <div class="carousel-item">
 
@@ -1483,6 +1512,13 @@
 
   </body>
 </html>
+
+<script>
+  function toggle() {
+      document.getElementById("navbar-tog").classList.add("collapsed");
+      document.getElementById("navbarNav").classList.remove("show");
+    }
+</script>
 
 <script>
   total = 18;
