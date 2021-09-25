@@ -12345,4 +12345,12 @@ transition-property: all; */
   color: #1a17f7;
 }
 
+.form-border {
+  border: 1px solid #9926f0;
+}
+
+.form-borderBlue {
+  border: 1px solid #1a17f7;
+}
+
 /*# sourceMappingURL=style.css.map */
