@@ -1714,9 +1714,7 @@
     var blue = "Blue";
     var png = ".png";
 
-    var src = document.getElementById("INTROPICID").src;
-    var newsrc = src.substring(0, src.length - 4) + blue + png;
-    document.getElementById("INTROPICID").src = newsrc;
+    var src = document.getElementById("INTROPICID").src = "images/intro_picBlue.png";
 
     for(var i=1;i<15;i++) {
       src = document.getElementById("PROJECTIMGID" + i).src;
