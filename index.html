@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
   </head>
-  <body>
+  <body id="BODYID">
     <!-- Navbar Section -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+    <nav id="NAVBARID" class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
       <div class="container">
         <!-- <a class="navbar-brand" href="#">
         <img src="images/name.JPG" class="img-size" alt="Satwik-Logo">
@@ -55,7 +55,7 @@
               <a onclick="toggle()" class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
-          <button type="button" class="rounded-pill btn-rounded" onclick="window.open('tel:9354025808')">
+          <button id="BUTTONID1" type="button" class="rounded-pill btn-rounded" onclick="window.open('tel:9354025808')">
             +91-9354025808
             <span>
               <i class="fas fa-phone"></i>
@@ -81,7 +81,7 @@
                 world problems.</span
               >
             </h1>
-            <button type="button" class="rounded-pill btn-rounded" onclick="window.open('images/Resume.pdf')">
+            <button id="BUTTONID2" type="button" class="rounded-pill btn-rounded" onclick="window.open('images/Resume_SatwikDash.pdf')">
               My Resume
               <span>
                 <i class="fas fa-arrow-right"></i>
@@ -89,9 +89,10 @@
             </button>
           </div>
           <div class="col-md-6 intros text-end">
-            <div class="video-box">
+            <div id="VIDBOXID" class="video-box">
               <img
-                src="https://github.com/Satwik-pro/portfolio-version-2/blob/master/images/Intro_pic.png?raw=true"
+                id="INTROPICID"
+                src="images/intro_pic.png"
                 alt="Video Illustration"
                 class="img-fluid"
               />
@@ -129,7 +130,7 @@
       <div class="container">
         <div class="row text-center">
           <h4 class="fw-bold lead mb-3">Cracked Companies Like</h4>
-          <div class="heading-line mb-5"></div>
+          <div id="HEADLINEID1" class="heading-line mb-5"></div>
         </div>
       </div>
 
@@ -179,7 +180,7 @@
         <div class="row text-center">
           <h4 class="fw-bold lead mb-3">Worked with Companies Like</h4>
           <br />
-          <div class="heading-line mb-5"></div>
+          <div id="HEADLINEID2" class="heading-line mb-5"></div>
         </div>
       </div>
 
@@ -211,7 +212,7 @@
         <div class="row text-center">
           <h4 class="fw-bold lead mb-3">Learned From Companies Like</h4>
           <br />
-          <div class="heading-line mb-5"></div>
+          <div id="HEADLINEID3" class="heading-line mb-5"></div>
         </div>
       </div>
 
@@ -288,11 +289,11 @@
           <span style="color: white;" class="navbar-brand">Work Summary</span>
           <ul class="nav nav-pills">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" style="background-color: white" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><span style="color: #9926f0">Companies</span></a>
+              <a class="nav-link dropdown-toggle" style="background-color: white" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><span id="COMP" class="comp">Companies</span></a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#scrollspyHeading1">ClearExam</a></li>
+                <li><a id="DDCOMPID1" href="#scrollspyHeading1" style="color: #9926f0; text-decoration: none; margin-left: 5px;">ClearExam</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#scrollspyHeading2">PupilFirst School</a></li>
+                <li><a id="DDCOMPID2" href="#scrollspyHeading2" style="color: #9926f0; text-decoration: none; margin-left: 5px;">PupilFirst School</a></li>
               </ul>
             </li>
           </ul>
@@ -300,11 +301,10 @@
         <div class="work-desc" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
           <div id="scrollspyHeading1" style="display: flex;">
             <img src="images/clearexamlogo.jfif" alt="" class="expimage">
-            <h3 class="display-3--title mt-1">ClearExam</h3>
+            <h3 id="DISPLAYID1" class="display-3--title mt-1">ClearExam</h3>
           </div>
           <p>
-            <!-- k -->
-            <ul class="cta-info-lis">
+            <ul id="CILID1" class="cta-info-lis">
               <li>Job Type: Internship</li>
               <li>Role: Frontend Developer and Team Leader</li>
               <li>Duration: Two months</li>
@@ -314,7 +314,7 @@
               <li>Tech Stacks used: Replit, Blogger, VS Code, Excel & Github</li>
             </ul>
           </p>&emsp;
-          <button type="button" class="rounded-pill btn-rounded" style="border-color: #d122e3;" onclick="window.open('images/ClearExam Internship Certificate.pdf')">
+          <button id="BUTTONID3" type="button" class="rounded-pill btn-rounded coloritborder" onclick="window.open('images/ClearExam Internship Certificate.pdf')">
             Certificate
             <span>
               <i class="fas fa-arrow-right"></i>
@@ -323,10 +323,10 @@
           <br><br><br><br>
           <div id="scrollspyHeading2" style="display: flex;">
             <img src="images/pupilfirstlogo.jfif" alt="" class="expimage">
-            <h3 class="display-3--title mt-1">PupilFirst School</h3>
+            <h3 id="DISPLAYID2" class="display-3--title mt-1">PupilFirst School</h3>
           </div>
           <p>
-            <ul class="cta-info-lis">
+            <ul id="CILID2" class="cta-info-lis">
               <li>Job Type: Internship cum course</li>
               <li>Role: Full Stack Web Development Trainee</li>
               <li>Duration: Two months</li>
@@ -336,7 +336,7 @@
             </ul>
           </p>
           &emsp;
-          <button type="button" class="rounded-pill btn-rounded" style="border-color: #d122e3;" onclick="window.open('images/Pupilfirst Internship Certificate.pdf')">
+          <button id="BUTTONID4" type="button" class="rounded-pill btn-rounded coloritborder" onclick="window.open('images/Pupilfirst Internship Certificate.pdf')">
             Certificate
             <span>
               <i class="fas fa-arrow-right"></i>
@@ -361,7 +361,7 @@
       <div class="container">
         <div class="row text-center">
           <h1 class="display-3 fw-bold">Projects</h1>
-          <div class="heading-line mb-5"></div>
+          <div id="HEADLINEID4" class="heading-line mb-5"></div>
         </div>
       </div>
 
@@ -391,8 +391,8 @@
           <!-- PC -->
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 pc-1">
             <div class="services-content">
-              <div class="icon d-block fas fa-coffee"></div>
-              <h3 class="display-3--title mt-1">Cafeteria Management</h3>
+              <div id="ICONID1" class="icon d-block fas fa-coffee"></div>
+              <h3 id="DISPLAYID3" class="display-3--title mt-1">Cafeteria Management</h3>
               <p class="lh-lg">
                 <ul class="cta-info-list">
                   <li>A website where users can order foods items and admin / clerks can mark the order delivered.</li>
@@ -401,7 +401,7 @@
                   <li>Tech Stack Used: HTML, CSS, Ruby on Rails & PostgreSQL.</li>
                 </ul>
               </p>
-              <button type="button" class="rounded-pill btn-rounded borpri" onclick="window.open('https://cocafe.herokuapp.com/')">
+              <button id="BUTTONID5" type="button" class="rounded-pill btn-rounded borpri" onclick="window.open('https://cocafe.herokuapp.com/')">
                 Live Website
                 <span>
                   <i class="fas fa-arrow-right"></i>
@@ -411,18 +411,18 @@
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end pc-2">
             <div class="services-pic">
-              <img src="images/Restaurant _Monochromatic.png" alt="" class="img-fluid">
+              <img id="PROJECTIMGID1" src="images/Restaurant _Monochromatic.png" alt="" class="img-fluid">
             </div>
           </div>
 
           <!-- Mobile -->
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 mobile">
             <div class="services-content">
-              <div class="icon d-block fas fa-coffee"></div>
-              <h3 class="display-3--title mt-1">Cafeteria Management</h3>
+              <div id="ICONID2" class="icon d-block fas fa-coffee"></div>
+              <h3 id="DISPLAYID4" class="display-3--title mt-1">Cafeteria Management</h3>
               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
                 <div class="services-pic">
-                  <img src="images/Restaurant _Monochromatic.png" alt="" class="img-fluid">
+                  <img id="PROJECTIMGID2" src="images/Restaurant _Monochromatic.png" alt="" class="img-fluid">
                 </div>
               </div>
               <p class="lh-lg">
@@ -433,7 +433,7 @@
                   <li>Tech Stack Used: HTML, CSS, Ruby on Rails & PostgreSQL.</li>
                 </ul>
               </p>
-              <button type="button" class="rounded-pill btn-rounded borpri" onclick="window.open('https://cocafe.herokuapp.com/')">
+              <button id="BUTTONID6" type="button" class="rounded-pill btn-rounded borpri" onclick="window.open('https://cocafe.herokuapp.com/')">
                 Live Website
                 <span>
                   <i class="fas fa-arrow-right"></i>
@@ -447,13 +447,13 @@
           <!-- PC -->
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start pc-2">
             <div class="services-pic">
-              <img src="images/Winner _Monochromatic.png" alt="" class="img-fluid">
+              <img id="PROJECTIMGID3" src="images/Winner _Monochromatic.png" alt="" class="img-fluid">
             </div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 pc-1">
             <div class="services-content">
-              <div class="icon d-block fas fa-certificate"></div>
-              <h3 class="display-3--title mt-1">Personal Certificates</h3>
+              <div id="ICONID3" class="icon d-block fas fa-certificate"></div>
+              <h3 id="DISPLAYID5" class="display-3--title mt-1">Personal Certificates</h3>
               <p class="lh-lg">
                 <ul class="cta-info-list">
                   <li>A website showcasing all my certificates.</li>
@@ -462,7 +462,7 @@
                   <li>Tech Stack Used: HTML, CSS & JavaScript.</li>
                 </ul>
               </p>
-              <button type="button" class="rounded-pill btn-rounded borpri" onclick="window.open('https://satwik-pro.github.io/Certificates-Version-2/')">
+              <button id="BUTTONID7" type="button" class="rounded-pill btn-rounded borpri" onclick="window.open('https://satwik-pro.github.io/Certificates-Version-2/')">
                 Live Website
                 <span>
                   <i class="fas fa-arrow-right"></i>
@@ -474,11 +474,11 @@
           <!-- Mobile -->
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 mobile">
             <div class="services-content">
-              <div class="icon d-block fas fa-certificate"></div>
-              <h3 class="display-3--title mt-1">Personal Certificates</h3>
+              <div id="ICONID4" class="icon d-block fas fa-certificate"></div>
+              <h3 id="DISPLAYID6" class="display-3--title mt-1">Personal Certificates</h3>
               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start">
                 <div class="services-pic">
-                  <img src="images/Winner _Monochromatic.png" alt="" class="img-fluid">
+                  <img id="PROJECTIMGID4" src="images/Winner _Monochromatic.png" alt="" class="img-fluid">
                 </div>
               </div>
               <p class="lh-lg">
@@ -489,7 +489,7 @@
                   <li>Tech Stack Used: HTML, CSS & JavaScript.</li>
                 </ul>
               </p>
-              <button type="button" class="rounded-pill btn-rounded borpri" onclick="window.open('https://satwik-pro.github.io/Certificates-Version-2/')">
+              <button id="BUTTONID8" type="button" class="rounded-pill btn-rounded borpri" onclick="window.open('https://satwik-pro.github.io/Certificates-Version-2/')">
                 Live Website
                 <span>
                   <i class="fas fa-arrow-right"></i>
@@ -503,8 +503,8 @@
           <!-- PC -->
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 pc-1">
             <div class="services-content">
-              <div class="icon d-block fas fa-clipboard-list"></div>
-              <h3 class="display-3--title mt-1">To-Do Application</h3>
+              <div id="ICONID5" class="icon d-block fas fa-clipboard-list"></div>
+              <h3 id="DISPLAYID7" class="display-3--title mt-1">To-Do Application</h3>
               <p class="lh-lg">
                 <ul class="cta-info-list">
                   <li>A website where users can add / delete / update their own todos.</li>
@@ -514,7 +514,7 @@
                   <li>Tech Stack Used: HTML, CSS, Ruby on Rails, PostgreSQL.</li>
                 </ul>
               </p>
-              <button type="button" class="rounded-pill btn-rounded borpri" onclick="window.open('https://todobysatwik.herokuapp.com/')">
+              <button id="BUTTONID9" type="button" class="rounded-pill btn-rounded borpri" onclick="window.open('https://todobysatwik.herokuapp.com/')">
                 Live Website
                 <span>
                   <i class="fas fa-arrow-right"></i>
@@ -524,18 +524,18 @@
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end pc-2">
             <div class="services-pic">
-              <img src="images/Checklist _Monochromatic.png" alt="" class="img-fluid">
+              <img id="PROJECTIMGID5" src="images/Checklist _Monochromatic.png" alt="" class="img-fluid">
             </div>
           </div>
 
           <!-- Mobile -->
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 mobile">
             <div class="services-content">
-              <div class="icon d-block fas fa-clipboard-list"></div>
-              <h3 class="display-3--title mt-1">To-Do Application</h3>
+              <div id="ICONID6" class="icon d-block fas fa-clipboard-list"></div>
+              <h3 id="DISPLAYID8" class="display-3--title mt-1">To-Do Application</h3>
               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
                 <div class="services-pic">
-                  <img src="images/Checklist _Monochromatic.png" alt="" class="img-fluid">
+                  <img id="PROJECTIMGID6" src="images/Checklist _Monochromatic.png" alt="" class="img-fluid">
                 </div>
               </div>
               <p class="lh-lg">
@@ -547,7 +547,7 @@
                   <li>Tech Stack Used: HTML, CSS, Ruby on Rails, PostgreSQL.</li>
                 </ul>
               </p>
-              <button type="button" class="rounded-pill btn-rounded borpri" onclick="window.open('https://todobysatwik.herokuapp.com/')">
+              <button id="BUTTONID10" type="button" class="rounded-pill btn-rounded borpri" onclick="window.open('https://todobysatwik.herokuapp.com/')">
                 Live Website
                 <span>
                   <i class="fas fa-arrow-right"></i>
@@ -561,13 +561,13 @@
           <!-- PC -->
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start pc-2">
             <div class="services-pic">
-              <img src="images/Coding _Monochromatic.png" alt="" class="img-fluid">
+              <img id="PROJECTIMGID7" src="images/Coding _Monochromatic.png" alt="" class="img-fluid">
             </div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 pc-1">
             <div class="services-content">
-              <div class="icon d-block fas fa-fighter-jet"></div>
-              <h3 class="display-3--title mt-1">Type Speed Checker</h3>
+              <div id="ICONID7" class="icon d-block fas fa-fighter-jet"></div>
+              <h3 id="DISPLAYID9" class="display-3--title mt-1">Type Speed Checker</h3>
               <p class="lh-lg">
                 <ul class="cta-info-list">
                   <li>A website where users can check their typing speed.</li>
@@ -576,7 +576,7 @@
                   <li>Tech Stack Used: HTML, CSS & JavaScript.</li>
                 </ul>
               </p>
-              <button type="button" class="rounded-pill btn-rounded borpri" onclick="window.open('https://satwik-pro.github.io/Typing-Speed-Check/')">
+              <button id="BUTTONID11" type="button" class="rounded-pill btn-rounded borpri" onclick="window.open('https://satwik-pro.github.io/Typing-Speed-Check/')">
                 Live Website
                 <span>
                   <i class="fas fa-arrow-right"></i>
@@ -588,11 +588,11 @@
           <!-- Mobile -->
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 mobile">
             <div class="services-content">
-              <div class="icon d-block fas fa-fighter-jet"></div>
-              <h3 class="display-3--title mt-1">Type Speed Checker</h3>
+              <div id="ICONID8" class="icon d-block fas fa-fighter-jet"></div>
+              <h3 id="DISPLAYID10" class="display-3--title mt-1">Type Speed Checker</h3>
               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start">
                 <div class="services-pic">
-                  <img src="images/Coding _Monochromatic.png" alt="" class="img-fluid">
+                  <img id="PROJECTIMGID8" src="images/Coding _Monochromatic.png" alt="" class="img-fluid">
                 </div>
               </div>
               <p class="lh-lg">
@@ -603,7 +603,7 @@
                   <li>Tech Stack Used: HTML, CSS & JavaScript.</li>
                 </ul>
               </p>
-              <button type="button" class="rounded-pill btn-rounded borpri" onclick="window.open('https://satwik-pro.github.io/Typing-Speed-Check/')">
+              <button id="BUTTONID12" type="button" class="rounded-pill btn-rounded borpri" onclick="window.open('https://satwik-pro.github.io/Typing-Speed-Check/')">
                 Live Website
                 <span>
                   <i class="fas fa-arrow-right"></i>
@@ -617,8 +617,8 @@
           <!-- PC -->
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 pc-1">
             <div class="services-content">
-              <div class="icon d-block fas fa-address-card"></div>
-              <h3 class="display-3--title mt-1">First Portfolio</h3>
+              <div id="ICONID9" class="icon d-block fas fa-address-card"></div>
+              <h3 id="DISPLAYID11" class="display-3--title mt-1">First Portfolio</h3>
               <p class="lh-lg">
                 <ul class="cta-info-list">
                   <li>My first portfolio website.</li>
@@ -627,7 +627,7 @@
                   <li>Tech Stack Used: HTML & CSS.</li>
                 </ul>
               </p>
-              <button type="button" class="rounded-pill btn-rounded borpri" onclick="window.open('https://satwik-pro.github.io/PortFolio/')">
+              <button id="BUTTONID13" type="button" class="rounded-pill btn-rounded borpri" onclick="window.open('https://satwik-pro.github.io/PortFolio/')">
                 Live Website
                 <span>
                   <i class="fas fa-arrow-right"></i>
@@ -637,18 +637,18 @@
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end pc-2">
             <div class="services-pic">
-              <img src="images/Report analysis _Monochromatic.png" alt="" class="img-fluid">
+              <img id="PROJECTIMGID9" src="images/Report analysis _Monochromatic.png" alt="" class="img-fluid">
             </div>
           </div>
 
           <!-- Mobile -->
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 mobile">
             <div class="services-content">
-              <div class="icon d-block fas fa-address-card"></div>
-              <h3 class="display-3--title mt-1">First Portfolio</h3>
+              <div id="ICONID10" class="icon d-block fas fa-address-card"></div>
+              <h3 id="DISPLAYID12" class="display-3--title mt-1">First Portfolio</h3>
               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
                 <div class="services-pic">
-                  <img src="images/Report analysis _Monochromatic.png" alt="" class="img-fluid">
+                  <img id="PROJECTIMGID10" src="images/Report analysis _Monochromatic.png" alt="" class="img-fluid">
                 </div>
               </div>
               <p class="lh-lg">
@@ -659,7 +659,7 @@
                   <li>Tech Stack Used: HTML & CSS.</li>
                 </ul>
               </p>
-              <button type="button" class="rounded-pill btn-rounded borpri" onclick="window.open('https://satwik-pro.github.io/PortFolio/')">
+              <button id="BUTTONID14" type="button" class="rounded-pill btn-rounded borpri" onclick="window.open('https://satwik-pro.github.io/PortFolio/')">
                 Live Website
                 <span>
                   <i class="fas fa-arrow-right"></i>
@@ -673,13 +673,13 @@
           <!-- PC -->
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start pc-2">
             <div class="services-pic">
-              <img src="images/Super Man_Monochromatic.png" alt="" class="img-fluid">
+              <img id="PROJECTIMGID11" src="images/Super Man_Monochromatic.png" alt="" class="img-fluid">
             </div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 pc-1">
             <div class="services-content">
-              <div class="icon d-block fas fa-soild fa-users"></div>
-              <h3 class="display-3--title mt-1">Game Animation</h3>
+              <div id="ICONID11" class="icon d-block fas fa-soild fa-users"></div>
+              <h3 id="DISPLAYID13" class="display-3--title mt-1">Game Animation</h3>
               <p class="lh-lg">
                 <ul class="cta-info-list">
                   <li>A website where user can play a fighting game.</li>
@@ -688,7 +688,7 @@
                   <li>Tech Stack Used: HTML, CSS & JavaScript.</li>
                 </ul>
               </p>
-              <button type="button" class="rounded-pill btn-rounded borpri" onclick="window.open('https://satwik-pro.github.io/')">
+              <button id="BUTTONID15" type="button" class="rounded-pill btn-rounded borpri" onclick="window.open('https://satwik-pro.github.io/')">
                 Live Website
                 <span>
                   <i class="fas fa-arrow-right"></i>
@@ -700,11 +700,11 @@
           <!-- Mobile -->
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 mobile">
             <div class="services-content">
-              <div class="icon d-block fas fa-soild fa-users"></div>
-              <h3 class="display-3--title mt-1">Game Animation</h3>
+              <div id="ICONID12" class="icon d-block fas fa-soild fa-users"></div>
+              <h3 id="DISPLAYID14" class="display-3--title mt-1">Game Animation</h3>
               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start">
                 <div class="services-pic">
-                  <img src="images/Super Man_Monochromatic.png" alt="" class="img-fluid">
+                  <img id="PROJECTIMGID12" src="images/Super Man_Monochromatic.png" alt="" class="img-fluid">
                 </div>
               </div>
               <p class="lh-lg">
@@ -715,7 +715,7 @@
                   <li>Tech Stack Used: HTML, CSS & JavaScript.</li>
                 </ul>
               </p>
-              <button type="button" class="rounded-pill btn-rounded borpri" onclick="window.open('https://satwik-pro.github.io/')">
+              <button id="BUTTONID16" type="button" class="rounded-pill btn-rounded borpri" onclick="window.open('https://satwik-pro.github.io/')">
                 Live Website
                 <span>
                   <i class="fas fa-arrow-right"></i>
@@ -729,8 +729,8 @@
           <!-- PC -->
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 pc-1">
             <div class="services-content">
-              <div class="icon d-block fas fa-solid fa-clock"></div>
-              <h3 class="display-3--title mt-1">Analog Clock</h3>
+              <div id="ICONID13" class="icon d-block fas fa-solid fa-clock"></div>
+              <h3 id="DISPLAYID15" class="display-3--title mt-1">Analog Clock</h3>
               <p class="lh-lg">
                 <ul class="cta-info-list">
                   <li>A website where users can check the current time.</li>
@@ -739,7 +739,7 @@
                   <li>Tech Stack Used: HTML, CSS & JavaScript.</li>
                 </ul>
               </p>
-              <button type="button" class="rounded-pill btn-rounded borpri" onclick="window.open('https://satwik-pro.github.io/Analog-Clock/')">
+              <button id="BUTTONID17" type="button" class="rounded-pill btn-rounded borpri" onclick="window.open('https://satwik-pro.github.io/Analog-Clock/')">
                 Live Website
                 <span>
                   <i class="fas fa-arrow-right"></i>
@@ -749,18 +749,18 @@
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end pc-2">
             <div class="services-pic">
-              <img src="images/Time_Monochromatic.png" alt="" class="img-fluid">
+              <img id="PROJECTIMGID13" src="images/Time_Monochromatic.png" alt="" class="img-fluid">
             </div>
           </div>
 
           <!-- Mobile -->
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 mobile">
             <div class="services-content">
-              <div class="icon d-block fas fa-solid fa-clock"></div>
-              <h3 class="display-3--title mt-1">Analog Clock</h3>
+              <div id="ICONID14" class="icon d-block fas fa-solid fa-clock"></div>
+              <h3 id="DISPLAYID16" class="display-3--title mt-1">Analog Clock</h3>
               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
                 <div class="services-pic">
-                  <img src="images/Time_Monochromatic.png" alt="" class="img-fluid">
+                  <img id="PROJECTIMGID14" src="images/Time_Monochromatic.png" alt="" class="img-fluid">
                 </div>
               </div>
               <p class="lh-lg">
@@ -771,7 +771,7 @@
                   <li>Tech Stack Used: HTML, CSS & JavaScript.</li>
                 </ul>
               </p>
-              <button type="button" class="rounded-pill btn-rounded borpri" onclick="window.open('https://satwik-pro.github.io/Analog-Clock/')">
+              <button id="BUTTONID18" type="button" class="rounded-pill btn-rounded borpri" onclick="window.open('https://satwik-pro.github.io/Analog-Clock/')">
                 Live Website
                 <span>
                   <i class="fas fa-arrow-right"></i>
@@ -803,12 +803,12 @@
 
               <div class="carousel-item active">
 
-                <div class="achievements_card">
+                <div id="ACHVID1" class="achievements_card">
                   <p class="lh-lg">
                     <i class="fas fa-quote-left"></i>
                     Infosys Certified Software Developer
                     <i class="fas fa-quote-right"></i>
-                    <div class="ratings p-1">
+                    <div id="RATINGSID1" class="ratings p-1">
                       <i class="fas fa-star a1"></i>
                       <i class="fas fa-star a2"></i>
                       <i class="fas fa-star a3"></i>
@@ -817,7 +817,7 @@
                     </div>
                   </p>
                 </div>
-                <div class="achievements_pic">
+                <div id="ACHVPICID1" class="achievements_pic">
                   <img src="images/logo2.jpg" alt="" class="rounded-circle img-fluid">
                 </div>
                 <div class="achievements_name">
@@ -831,12 +831,12 @@
 
               <div class="carousel-item">
 
-                <div class="achievements_card">
+                <div id="ACHVID2" class="achievements_card">
                   <p class="lh-lg">
                     <i class="fas fa-quote-left"></i>
                     LinkedIn Certified Software Developer
                     <i class="fas fa-quote-right"></i>
-                    <div class="ratings p-1">
+                    <div id="RATINGSID2" class="ratings p-1">
                       <i class="fas fa-star a1"></i>
                       <i class="fas fa-star a2"></i>
                       <i class="fas fa-star a3"></i>
@@ -845,7 +845,7 @@
                     </div>
                   </p>
                 </div>
-                <div class="achievements_pic">
+                <div id="ACHVPICID2" class="achievements_pic">
                   <img src="https://www.freeiconspng.com/uploads/linkedin-icon-8.png" alt="" class="rounded-circle img-fluid">
                 </div>
                 <div class="achievements_name">
@@ -859,12 +859,12 @@
 
               <div class="carousel-item">
 
-                <div class="achievements_card">
+                <div id="ACHVID3" class="achievements_card">
                   <p class="lh-lg">
                     <i class="fas fa-quote-left"></i>
                     #2 in Amity University Noida in GeeksForGeeks LeaderBoard
                     <i class="fas fa-quote-right"></i>
-                    <div class="ratings p-1">
+                    <div id="RATINGSID3" class="ratings p-1">
                       <i class="fas fa-star a1"></i>
                       <i class="fas fa-star a2"></i>
                       <i class="fas fa-star a3"></i>
@@ -873,7 +873,7 @@
                     </div>
                   </p>
                 </div>
-                <div class="achievements_pic">
+                <div id="ACHVPICID3" class="achievements_pic">
                   <img src="images/gfglogo.png" alt="" class="rounded-circle img-fluid">
                 </div>
                 <div class="achievements_name">
@@ -887,12 +887,12 @@
 
               <div class="carousel-item">
 
-                <div class="achievements_card">
+                <div id="ACHVID4" class="achievements_card">
                   <p class="lh-lg">
                     <i class="fas fa-quote-left"></i>
                       25+ Repositories on Github
                     <i class="fas fa-quote-right"></i>
-                    <div class="ratings p-1">
+                    <div id="RATINGSID4" class="ratings p-1">
                       <i class="fas fa-star a1"></i>
                       <i class="fas fa-star a2"></i>
                       <i class="fas fa-star a3"></i>
@@ -901,7 +901,7 @@
                     </div>
                   </p>
                 </div>
-                <div class="achievements_pic">
+                <div id="ACHVPICID4" class="achievements_pic">
                   <img src="images/logo3.png" alt="" class="rounded-circle img-fluid">
                 </div>
                 <div class="achievements_name">
@@ -915,12 +915,12 @@
 
               <div class="carousel-item">
 
-                <div class="achievements_card">
+                <div id="ACHVID5" class="achievements_card">
                   <p class="lh-lg">
                     <i class="fas fa-quote-left"></i>
                     Won many Cash Prizes and Goodies from a lot of Competitions at Scaler, GeeksForGeeks, Github etc.
                     <i class="fas fa-quote-right"></i>
-                    <div class="ratings p-1">
+                    <div id="RATINGSID5" class="ratings p-1">
                       <i class="fas fa-star a1"></i>
                       <i class="fas fa-star a2"></i>
                       <i class="fas fa-star a3"></i>
@@ -929,7 +929,7 @@
                     </div>
                   </p>
                 </div>
-                <div class="achievements_pic">
+                <div id="ACHVPICID5" class="achievements_pic">
                   <img src="images/logo4.png" alt="" class="rounded-circle img-fluid">
                 </div>
                 <div class="achievements_name">
@@ -943,12 +943,12 @@
 
               <div class="carousel-item">
 
-                <div class="achievements_card">
+                <div id="ACHVID6" class="achievements_card">
                   <p class="lh-lg">
                     <i class="fas fa-quote-left"></i>
                     40+ Certificates Collection
                     <i class="fas fa-quote-right"></i>
-                    <div class="ratings p-1">
+                    <div id="RATINGSID6" class="ratings p-1">
                       <i class="fas fa-star a1"></i>
                       <i class="fas fa-star a2"></i>
                       <i class="fas fa-star a3"></i>
@@ -957,7 +957,7 @@
                     </div>
                   </p>
                 </div>
-                <div class="achievements_pic">
+                <div id="ACHVPICID6" class="achievements_pic">
                   <img src="images/logo5.png" alt="" class="rounded-circle img-fluid">
                 </div>
                 <div class="achievements_name">
@@ -997,7 +997,7 @@
         <div class="container">
           <div class="row text-center">
             <h1 class="display-3 fw-bold">Skills</h1>
-            <div class="heading-line"></div>
+            <div id="HEADLINEID5" class="heading-line"></div>
             <p class="lead">This section covers my skills from programming to development</p>
           </div>
           <div class="row mt-5">
@@ -1006,12 +1006,12 @@
               <div class="accordion" id="accordionExample">
                 <div class="accordion-item shadow mb-3">
                   <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button id="ACRBTNID1" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                       Competitive Prgramming in C++
                     </button>
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
+                    <div id="ACRBODYID1" class="accordion-body">
                       <strong>Involved in it since 2020.</strong> C++ is the language in which I have been working since my senior secondary level education and use the same to solve problems and participate in different contests. I sometimes use python as well if needed. Few of my CP profiles are mentioned below: <br>
                       <a href="https://www.hackerearth.com/@satwik55" target="_blank">Hackerearth Profile</a><br>
                       <a href="https://auth.geeksforgeeks.org/user/satwikdash2000/practice/" target="_blank">GeeksForGeeks Profile</a><br>
@@ -1023,12 +1023,12 @@
 
                 <div class="accordion-item shadow mb-3">
                   <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <button id="ACRBTNID2" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                       Frontend Development
                     </button>
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
+                    <div id="ACRBODYID2" class="accordion-body">
                       <strong>Involved in it since Jan 2021.</strong> Strated my web development carrier by learning languages like HTML & CSS and extended it further to JavaScript & Bootstrap. Some of my Static websites are mentioned below: <br>
                       <a href="https://satwik-pro.github.io/PortFolio/" target="_blank">First Portfolio Website</a><br>
                       <a href="https://satwik-pro.github.io/Analog-Clock/" target="_blank">Analog Clock</a><br>
@@ -1040,12 +1040,12 @@
 
                 <div class="accordion-item shadow mb-3">
                   <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <button id="ACRBTNID3" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                       Backend Development
                     </button>
                   </h2>
                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
+                    <div id="ACRBODYID3" class="accordion-body">
                       <strong>Involved in it since May 2021.</strong> After making few static websites I was curious to make few websites involving databases & backend technologies like Java(JSP, Servlets & NetbeansDB), Ruby on Rails, NodeJS, PostgreSQL etc. Some of my dynamic websites are mentioned below: <br>
                       <a href="https://github.com/Satwik-pro/E-Commerce-Website" target="_blank">E-commerce Website</a><br>
                       <a href="https://github.com/Satwik-pro/Simple-Poll" target="_blank">Simple Poll</a><br>
@@ -1056,12 +1056,12 @@
 
                 <div class="accordion-item shadow mb-3">
                   <h2 class="accordion-header" id="headingFour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <button id="ACRBTNID4" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                       Core Subjects
                     </button>
                   </h2>
                   <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
+                    <div id="ACRBODYID4" class="accordion-body">
                       In academics, I studied about some core subjects like Database Management System, Object Oriented Programming Structure, Operating Systems & Networking. I have only theoritical but a decent knowledge in all of them.
                     </div>
                   </div>
@@ -1069,13 +1069,13 @@
 
                 <div class="accordion-item shadow mb-3">
                   <h2 class="accordion-header" id="headingFive">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                      GIT
+                    <button id="ACRBTNID5" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      GITHUB
                     </button>
                   </h2>
                   <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>Git commands</strong> I have a lot of repositories in github so I use git commands to push my repositories to it and commit changes as well.
+                    <div id="ACRBODYID5" class="accordion-body">
+                      <strong>Github Commands</strong> I have a lot of repositories in github and therefore I know & use a lot of github commands to add, check status, create branches, pull, commit, push, checkout etc.
                     </div>
                   </div>
                 </div>
@@ -1112,9 +1112,9 @@
         <div class="row">
 
           <div id="image-number0" class="col-lg-4 col-md-6">
-            <div class="portfolio-box shadow">
+            <div id="PFBOXID1" class="portfolio-box shadow">
               <img src="images/p1.JPG" alt="" class="img-fluid">
-              <div class="portfolio-info">
+              <div id="PFINFOID1" class="portfolio-info">
                 <div class="caption">
                   <h4>Goodies</h4>
                   <p>Won From GeeksForGeeks</p>
@@ -1124,9 +1124,9 @@
           </div>
 
           <div id="image-number1" class="col-lg-4 col-md-6">
-            <div class="portfolio-box shadow">
+            <div id="PFBOXID2" class="portfolio-box shadow">
               <img src="images/p2.JPG" alt="" class="img-fluid">
-              <div class="portfolio-info">
+              <div id="PFINFOID2" class="portfolio-info">
                 <div class="caption">
                   <h4>Goodies</h4>
                   <p>Won From Scaler</p>
@@ -1136,9 +1136,9 @@
           </div>
 
           <div id="image-number2" class="col-lg-4 col-md-6">
-            <div class="portfolio-box shadow">
+            <div id="PFBOXID3" class="portfolio-box shadow">
               <img src="images/p3.JPG" alt="" class="img-fluid">
-              <div class="portfolio-info">
+              <div id="PFINFOID3" class="portfolio-info">
                 <div class="caption">
                   <h4>Goodies</h4>
                   <p>Won From Hacktoberfest</p>
@@ -1148,9 +1148,9 @@
           </div>
 
           <div id="image-number3" class="col-lg-4 col-md-6">
-            <div class="portfolio-box shadow">
+            <div id="PFBOXID4" class="portfolio-box shadow">
               <img src="images/p4.JPG" alt="" class="img-fluid">
-              <div class="portfolio-info">
+              <div id="PFINFOID4" class="portfolio-info">
                 <div class="caption">
                   <h4>Profile</h4>
                   <p>Hackerearth</p>
@@ -1160,9 +1160,9 @@
           </div>
 
           <div id="image-number4" class="col-lg-4 col-md-6">
-            <div class="portfolio-box shadow">
+            <div id="PFBOXID5" class="portfolio-box shadow">
               <img src="images/p5.JPG" alt="" class="img-fluid">
-              <div class="portfolio-info">
+              <div id="PFINFOID5" class="portfolio-info">
                 <div class="caption">
                   <h4>Profile</h4>
                   <p>Leetcode</p>
@@ -1172,9 +1172,9 @@
           </div>
 
           <div id="image-number5" class="col-lg-4 col-md-6">
-            <div class="portfolio-box shadow">
+            <div id="PFBOXID6" class="portfolio-box shadow">
               <img src="images/p16.JPG" alt="" class="img-fluid">
-              <div class="portfolio-info">
+              <div id="PFINFOID6" class="portfolio-info">
                 <div class="caption">
                   <h4>Profile</h4>
                   <p>GeeksForGeeks</p>
@@ -1184,9 +1184,9 @@
           </div>
 
           <div id="image-number6" class="col-lg-4 col-md-6">
-            <div class="portfolio-box shadow">
+            <div id="PFBOXID7" class="portfolio-box shadow">
               <img src="images/p7.JPG" alt="" class="img-fluid">
-              <div class="portfolio-info">
+              <div id="PFINFOID7" class="portfolio-info">
                 <div class="caption">
                   <h4>Profile</h4>
                   <p>Hackerrank</p>
@@ -1196,9 +1196,9 @@
           </div>
 
           <div id="image-number7" class="col-lg-4 col-md-6">
-            <div class="portfolio-box shadow">
+            <div id="PFBOXID8" class="portfolio-box shadow">
               <img src="images/p6.JPG" alt="" class="img-fluid">
-              <div class="portfolio-info">
+              <div id="PFINFOID8" class="portfolio-info">
                 <div class="caption">
                   <h4>Profile</h4>
                   <p>Codechef</p>
@@ -1208,9 +1208,9 @@
           </div>
 
           <div id="image-number8" class="col-lg-4 col-md-6">
-            <div class="portfolio-box shadow">
+            <div id="PFBOXID9" class="portfolio-box shadow">
               <img src="images/p17.JPG" alt="" class="img-fluid">
-              <div class="portfolio-info">
+              <div id="PFINFOID9" class="portfolio-info">
                 <div class="caption">
                   <h4>Profile</h4>
                   <p>Github</p>
@@ -1220,9 +1220,9 @@
           </div>
 
           <div id="image-number9" class="col-lg-4 col-md-6">
-            <div class="portfolio-box shadow">
+            <div id="PFBOXID10" class="portfolio-box shadow">
               <img src="images/p9.JPG" alt="" class="img-fluid">
-              <div class="portfolio-info portfolio-bginfo">
+              <div id="PFINFOID10" class="portfolio-info portfolio-bginfo">
                 <div class="caption">
                   <h4>Certificates</h4>
                   <p>Website Screenshot</p>
@@ -1232,9 +1232,9 @@
           </div>
 
           <div id="image-number10" class="col-lg-4 col-md-6">
-            <div class="portfolio-box shadow">
+            <div id="PFBOXID11" class="portfolio-box shadow">
               <img src="images/p11.JPG" alt="" class="img-fluid">
-              <div class="portfolio-info">
+              <div id="PFINFOID11" class="portfolio-info">
                 <div class="caption">
                   <h4>First Portfolio</h4>
                   <p>Website Screenshot</p>
@@ -1244,9 +1244,9 @@
           </div>
 
           <div id="image-number11" class="col-lg-4 col-md-6">
-            <div class="portfolio-box shadow">
+            <div id="PFBOXID12" class="portfolio-box shadow">
               <img src="images/p13.JPG" alt="" class="img-fluid">
-              <div class="portfolio-info">
+              <div id="PFINFOID12" class="portfolio-info">
                 <div class="caption">
                   <h4>JavaScript Animation</h4>
                   <p>Website Screenshot</p>
@@ -1256,9 +1256,9 @@
           </div>
 
           <div id="image-number12" class="col-lg-4 col-md-6">
-            <div class="portfolio-box shadow">
+            <div id="PFBOXID13" class="portfolio-box shadow">
               <img src="images/p15.JPG" alt="" class="img-fluid">
-              <div class="portfolio-info">
+              <div id="PFINFOID13" class="portfolio-info">
                 <div class="caption">
                   <h4>Analog Clock</h4>
                   <p>Website Screenshot</p>
@@ -1268,9 +1268,9 @@
           </div>
 
           <div id="image-number13" class="col-lg-4 col-md-6">
-            <div class="portfolio-box shadow">
+            <div id="PFBOXID14" class="portfolio-box shadow">
               <img src="images/p18.JPG" alt="" class="img-fluid">
-              <div class="portfolio-info">
+              <div id="PFINFOID14" class="portfolio-info">
                 <div class="caption">
                   <h4>This.Portfolio</h4>
                   <p>Website Screenshot</p>
@@ -1280,9 +1280,9 @@
           </div>
 
           <div id="image-number14" class="col-lg-4 col-md-6">
-            <div class="portfolio-box shadow">
+            <div id="PFBOXID15" class="portfolio-box shadow">
               <img src="images/p14.JPG" alt="" class="img-fluid">
-              <div class="portfolio-info">
+              <div id="PFINFOID15" class="portfolio-info">
                 <div class="caption">
                   <h4>Type Speed Checker</h4>
                   <p>Website Screenshot</p>
@@ -1292,9 +1292,9 @@
           </div>
 
           <div id="image-number15" class="col-lg-4 col-md-6">
-            <div class="portfolio-box shadow">
+            <div id="PFBOXID16" class="portfolio-box shadow">
               <img src="images/p8.JPG" alt="" class="img-fluid">
-              <div class="portfolio-info">
+              <div id="PFINFOID16" class="portfolio-info">
                 <div class="caption">
                   <h4>Cafeteria Management</h4>
                   <p>Website Screenshot</p>
@@ -1304,9 +1304,9 @@
           </div>
 
           <div id="image-number16" class="col-lg-4 col-md-6">
-            <div class="portfolio-box shadow">
+            <div id="PFBOXID17" class="portfolio-box shadow">
               <img src="images/p10.JPG" alt="" class="img-fluid">
-              <div class="portfolio-info">
+              <div id="PFINFOID17" class="portfolio-info">
                 <div class="caption">
                   <h4>Cafeteria Management</h4>
                   <p>Website Screenshot</p>
@@ -1316,9 +1316,9 @@
           </div>
 
           <div id="image-number17" class="col-lg-4 col-md-6">
-            <div class="portfolio-box shadow">
+            <div id="PFBOXID18" class="portfolio-box shadow">
               <img src="images/p12.JPG" alt="" class="img-fluid">
-              <div class="portfolio-info">
+              <div id="PFINFOID18" class="portfolio-info">
                 <div class="caption">
                   <h4>To-Do Application</h4>
                   <p>Website Screenshot</p>
@@ -1338,12 +1338,12 @@
       <div class="container">
         <div class="row text-center">
           <h1 class="display-3 fw-bold text-capitalize">Get Started</h1>
-          <div class="heading-line"></div>
+          <div id="HEADLINEID6" class="heading-line"></div>
           <p class="lh-lg">Planning to hire me? Let's Connect</p>
         </div>
 
         <div class="row text-white">
-          <div class="col-12 col-md-6 gradient shadow p-3">
+          <div id="GRADIENT" class="col-12 col-md-6 gradient shadow p-3">
             <div class="cta-info w-100">
               <h4 class="display-4 fw-bold">
                 Satwik Dash
@@ -1381,7 +1381,7 @@
           </div>
           <div class="col-12 col-md-6 bg-white shadow p-3">
             <div class="form w-100 pb-2">
-              <h4 class="display-3-title mb-5" style="color: #d122e3;">CONTACT</h4>
+              <h4 id="COLORITID" class="display-3-title mb-5 colorit">CONTACT</h4>
               <form action="https://formsubmit.co/satwikdash2000@gmail.com" method="POST" class="row">
 
                 <div class="col-md-6 mb-3">
@@ -1401,7 +1401,7 @@
                 </div>
 
                 <div class="text-center d-grid mt-1">
-                  <button type="submit" class="btn btn-primary rounded-pill pt-3 pb-3">
+                  <button id="SUBMITID" type="submit" class="btn btn-primary rounded-pill pt-3 pb-3">
                     Submit
                     <i class="fas fa-paper-plane"></i>
                   </button>
@@ -1504,6 +1504,28 @@
 
     </footer>
 
+    <div id="MODALID">
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">NEW UPDATE</h5>
+            </div>
+            <div class="modal-body">
+              Hi! Welcome to my Portfolio Website! Checkout the Brand new Ocean Version of my Portfolio by Clicking on 'Visit'! You can
+              use the Current Version by Clicking on 'Close' Button.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="close_modal()" style="color: white; background: linear-gradient(to right, #9926f0, #d122e3);;">Close</button>
+              <button type="button" class="btn btn-primary" onclick="ocean()" style="color: white; background: linear-gradient(to right, #1a17f7, #4c7ce2);">Visit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="BODYFADEID" class=""></div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
@@ -1512,6 +1534,31 @@
 
   </body>
 </html>
+
+<script>
+  window.onload =
+  function modal() {
+    document.getElementById("exampleModalCenter").style = "display: block;";
+    document.getElementById("exampleModalCenter").classList.add("show");
+    document.getElementById("exampleModalCenter").classList.add("show");
+    document.getElementById("BODYID").classList.add("modal-open");
+    document.getElementById("BODYID").style = "overflow: hidden; padding-right: 17px;";
+    document.getElementById("BODYFADEID").classList.add("modal-backdrop");
+    document.getElementById("BODYFADEID").classList.add("fade");
+    document.getElementById("BODYFADEID").classList.add("show");
+  }
+
+  function close_modal() {
+    document.getElementById("exampleModalCenter").style = "display: none;";
+    document.getElementById("exampleModalCenter").classList.remove("show");
+    document.getElementById("exampleModalCenter").classList.remove("show");
+    document.getElementById("BODYID").classList.remove("modal-open");
+    document.getElementById("BODYID").style = "";
+    document.getElementById("BODYFADEID").classList.remove("modal-backdrop");
+    document.getElementById("BODYFADEID").classList.remove("fade");
+    document.getElementById("BODYFADEID").classList.remove("show");
+  }
+</script>
 
 <script>
   function toggle() {
@@ -1557,5 +1604,126 @@
         }
       }
     }
+  }
+</script>
+
+<script>
+  function ocean() {
+    document.getElementById("NAVBARID").classList.remove("menu");
+    document.getElementById("NAVBARID").classList.add("menuBlue");
+
+    var buttonid = "BUTTONID";
+    var pfboxid = "PFBOXID";
+    var pfinfoid = "PFINFOID";
+    for(var i=1; i<19; i++) {
+      document.getElementById(buttonid + i).classList.remove("btn-rounded");
+      document.getElementById(buttonid + i).classList.add("btn-roundedBlue");
+      if(i == 3 || i == 4) {
+        document.getElementById(buttonid + i).classList.remove("coloritborder");
+        document.getElementById(buttonid + i).classList.add("coloritborderBlue");
+      }
+      document.getElementById(pfboxid + i).classList.remove("portfolio-box");
+      document.getElementById(pfboxid + i).classList.add("portfolio-boxBlue");
+      document.getElementById(pfinfoid + i).classList.remove("portfolio-info");
+      document.getElementById(pfinfoid + i).classList.add("portfolio-infoBlue");
+    }
+
+    document.getElementById("home").classList.remove("intro-section");
+    document.getElementById("home").classList.add("intro-sectionBlue");
+
+    var headingline = "HEADLINEID";
+    for(var i=1; i<7; i++) {
+      document.getElementById(headingline + i).classList.remove("heading-line");
+      document.getElementById(headingline + i).classList.add("heading-lineBlue");
+    }
+
+    for(var i=5; i<19; i++) {
+      document.getElementById(buttonid + i).classList.remove("borpri");
+      document.getElementById(buttonid + i).classList.add("borpriBlue");
+    }
+
+    var iconid = "ICONID";
+    for(var i=1; i<15; i++) {
+      document.getElementById(iconid + i).classList.remove("icon");
+      document.getElementById(iconid + i).classList.add("iconBlue");
+    }
+
+    var displayid = "DISPLAYID";
+    for(var i=1; i<17; i++) {
+      document.getElementById(displayid + i).classList.remove("display-3--title");
+      document.getElementById(displayid + i).classList.add("display-3--titleBlue");
+    }
+
+    document.getElementById("achievements").classList.remove("achievements");
+    document.getElementById("achievements").classList.add("achievementsBlue");
+
+    document.getElementById("GRADIENT").classList.remove("gradient");
+    document.getElementById("GRADIENT").classList.add("gradientBlue");
+
+    var achvid = "ACHVID";
+    var achvpicid = "ACHVPICID";
+    for(var i=1; i<7; i++) {
+      document.getElementById(achvid + i).classList.remove("achievements_card");
+      document.getElementById(achvid + i).classList.add("achievements_cardBlue");
+      document.getElementById(achvpicid + i).classList.remove("achievements_pic");
+      document.getElementById(achvpicid + i).classList.add("achievements_picBlue");
+    }
+
+    var ratingsid = "RATINGSID";
+    for(var i=1; i<7 ;i++) {
+      document.getElementById(ratingsid + i).classList.remove("ratings");
+      document.getElementById(ratingsid + i).classList.add("ratingsBlue");
+    }
+
+    var acrbtnid = "ACRBTNID";
+    var acrbodyid = "ACRBODYID";
+    for(var i=1; i<6 ;i++) {
+      document.getElementById(acrbtnid + i).classList.remove("accordion-button");
+      document.getElementById(acrbtnid + i).classList.add("accordion-buttonBlue");
+      document.getElementById(acrbodyid + i).classList.remove("accordion-body");
+      document.getElementById(acrbodyid + i).classList.add("accordion-bodyBlue");
+    }
+
+    var ddcompid = "DDCOMPID";
+    for(var i=1;i<3;i++) {
+      document.getElementById(ddcompid + i).style = "color: #1a17f7; text-decoration: none; margin-left: 5px;";
+    }
+
+    var cilid = "CILID";
+    for(var i=1; i<3 ;i++) {
+      document.getElementById(cilid + i).classList.remove("cta-info-lis");
+      document.getElementById(cilid + i).classList.add("cta-info-lisBlue");
+    }
+
+    document.getElementById("portfolio").classList.remove("portfolio");
+    document.getElementById("portfolio").classList.add("portfolioBlue");
+    document.getElementById("workexp").classList.remove("experience");
+    document.getElementById("workexp").classList.add("experienceBlue");
+    document.getElementById("navbar-example2").classList.remove("exp-class");
+    document.getElementById("navbar-example2").classList.add("exp-classBlue");
+    document.getElementById("COMP").classList.remove("comp");
+    document.getElementById("COMP").classList.add("compBlue");
+    document.getElementById("VIDBOXID").classList.remove("video-box");
+    document.getElementById("VIDBOXID").classList.add("video-boxBlue");
+    document.getElementById("COLORITID").classList.remove("colorit");
+    document.getElementById("COLORITID").classList.add("coloritBlue");
+    document.getElementById("SUBMITID").style = "background-color: #1a17f7";
+
+    // PICTURES
+
+    var blue = "Blue";
+    var png = ".png";
+
+    var src = document.getElementById("INTROPICID").src;
+    var newsrc = src.substring(0, src.length - 4) + blue + png;
+    document.getElementById("INTROPICID").src = newsrc;
+
+    for(var i=1;i<15;i++) {
+      src = document.getElementById("PROJECTIMGID" + i).src;
+      newsrc = src.substring(0, src.length - 4) + blue + png;
+      document.getElementById("PROJECTIMGID" + i).src = newsrc;
+    }
+
+    close_modal();
   }
 </script>

@@ -3929,7 +3929,7 @@ fieldset:disabled .btn {
 }
 .dropdown-item.active,
 .dropdown-item:active {
-  color: #fff;
+  color: #212529;
   text-decoration: none;
   background-color: #9926f0;
 }
@@ -3960,35 +3960,35 @@ fieldset:disabled .btn {
 }
 
 .dropdown-menu-dark {
-  color: #dee2e6;
+  color: #212529;
   background-color: #343a40;
   border-color: rgba(0, 0, 0, 0.15);
 }
 .dropdown-menu-dark .dropdown-item {
-  color: #dee2e6;
+  color: #212529;
 }
 .dropdown-menu-dark .dropdown-item:hover,
 .dropdown-menu-dark .dropdown-item:focus {
-  color: #fff;
+  color: #212529;
   background-color: rgba(255, 255, 255, 0.15);
 }
 .dropdown-menu-dark .dropdown-item.active,
 .dropdown-menu-dark .dropdown-item:active {
-  color: #fff;
+  color: #212529;
   background-color: #9926f0;
 }
 .dropdown-menu-dark .dropdown-item.disabled,
 .dropdown-menu-dark .dropdown-item:disabled {
-  color: #adb5bd;
+  color: #212529;
 }
 .dropdown-menu-dark .dropdown-divider {
   border-color: rgba(0, 0, 0, 0.15);
 }
 .dropdown-menu-dark .dropdown-item-text {
-  color: #dee2e6;
+  color: #212529;
 }
 .dropdown-menu-dark .dropdown-header {
-  color: #adb5bd;
+  color: #212529;
 }
 
 .btn-group,
@@ -4848,18 +4848,47 @@ fieldset:disabled .btn {
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
     border-radius 0.15s ease;
 }
+.accordion-buttonBlue {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    border-radius 0.15s ease;
+}
 @media (prefers-reduced-motion: reduce) {
   .accordion-button {
     transition: none;
   }
+  .accordion-buttonBlue {
+    transition: none;
+  }
 }
 .accordion-button:not(.collapsed) {
-  color: #8a22d8;
+  color: #9926f0;
   background-color: #f5e9fe;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+}
+.accordion-buttonBlue:not(.collapsed) {
+  color: #1a17f7;
+  background-color: aliceblue;
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
 }
 .accordion-button:not(.collapsed)::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23d122e3'%3e%3cpath fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/%3e%3cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3e%3c/svg%3e");
+  transform: rotate(-180deg);
+}
+.accordion-buttonBlue:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%231a17f7'%3e%3cpath fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/%3e%3cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3e%3c/svg%3e");
   transform: rotate(-180deg);
 }
 .accordion-button::after {
@@ -4873,12 +4902,29 @@ fieldset:disabled .btn {
   background-size: 1.5rem;
   transition: transform 0.2s ease-in-out;
 }
+.accordion-buttonBlue::after {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: auto;
+  content: "";
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%231a17f7'%3e%3cpath fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/%3e%3cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+  transition: transform 0.2s ease-in-out;
+}
 @media (prefers-reduced-motion: reduce) {
   .accordion-button::after {
     transition: none;
   }
+  .accordion-buttonBlue::after {
+    transition: none;
+  }
 }
 .accordion-button:hover {
+  z-index: 2;
+}
+.accordion-buttonBlue:hover {
   z-index: 2;
 }
 .accordion-button:focus {
@@ -4887,7 +4933,12 @@ fieldset:disabled .btn {
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(153, 38, 240, 0.25);
 }
-
+.accordion-buttonBlue:focus {
+  z-index: 3;
+  border-color: aliceblue;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(6, 22, 240, 0.25);
+}
 .accordion-header {
   margin-bottom: 0;
 }
@@ -4922,6 +4973,14 @@ fieldset:disabled .btn {
 
 .accordion-body {
   padding: 1rem 1.25rem;
+}
+
+.accordion-bodyBlue {
+  padding: 1rem 1.25rem;
+}
+
+.accordion-bodyBlue a {
+  color: #1a17f7;
 }
 
 .accordion-flush .accordion-collapse {
@@ -11472,7 +11531,15 @@ fieldset:disabled .btn {
   background: linear-gradient(to right, #9926f0, #d122e3);
 }
 
+.menuBlue {
+  background: linear-gradient(to right, #1a17f7, #4c7ce2);
+}
+
 .menu li {
+  padding: 0 0.7rem;
+}
+
+.menuBlue li {
   padding: 0 0.7rem;
 }
 
@@ -11482,9 +11549,20 @@ fieldset:disabled .btn {
   font-weight: 600;
 }
 
+.menuBlue li a {
+  color: white !important;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+
 .img-size {
   width: 200px;
   height: 50px;
+}
+
+.nav-item a {
+  color: white;
 }
 
 /* Buttons */
@@ -11498,8 +11576,22 @@ fieldset:disabled .btn {
   background-color: white;
 }
 
+.btn-roundedBlue {
+  position: relative;
+  padding: 0.9375rem 4.375rem 0.937rem 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  border: 0.1rem solid white;
+  background-color: white;
+}
+
 .btn-rounded:hover {
   background: linear-gradient(to right, #9926f0, #d122e3);
+  color: white;
+}
+
+.btn-roundedBlue:hover {
+  background: linear-gradient(to right, #1a17f7, #4c7ce2);
   color: white;
 }
 
@@ -11514,11 +11606,32 @@ fieldset:disabled .btn {
   border-radius: 50%;
 }
 
+.btn-roundedBlue span {
+  position: absolute;
+  background-color: #1a17f7;
+  width: 2.5rem;
+  height: 2.5rem;
+  top: -24.5%;
+  right: 5px;
+  transform: translateY(50%);
+  border-radius: 50%;
+}
+
 .btn-rounded span:hover {
   background-color: black;
 }
 
+.btn-roundedBlue span:hover {
+  background-color: black;
+}
+
 .btn-rounded span i {
+  color: white;
+  font-size: 1rem;
+  line-height: 2.5rem;
+}
+
+.btn-roundedBlue span i {
   color: white;
   font-size: 1rem;
   line-height: 2.5rem;
@@ -11548,7 +11661,18 @@ fieldset:disabled .btn {
   height: 100%;
 }
 
+.intro-sectionBlue {
+  background: linear-gradient(to right, #1a17f7, #4c7ce2);
+  padding: 10rem 0 0 0;
+  width: 100%;
+  height: 100%;
+}
+
 .video-box {
+  position: relative;
+}
+
+.video-boxBlue {
   position: relative;
 }
 
@@ -11562,6 +11686,11 @@ fieldset:disabled .btn {
 .video-box a span i {
   font-size: 6rem;
   color: #d122e3;
+}
+
+.video-boxBlue a span i {
+  font-size: 6rem;
+  color: rgb(128, 203, 253);
 }
 
 @keyframes pulse-border {
@@ -11603,6 +11732,15 @@ fieldset:disabled .btn {
   background-color: #9926f0;
 }
 
+.heading-lineBlue::before {
+  content: "";
+  width: 20rem;
+  height: 0.1rem;
+  margin: 0 auto;
+  display: block;
+  background-color: #1a17f7;
+}
+
 .heading-line::after {
   content: "";
   width: 10rem;
@@ -11612,6 +11750,17 @@ fieldset:disabled .btn {
   height: 0.2rem;
   display: block;
   background-color: #9926f0;
+}
+
+.heading-lineBlue::after {
+  content: "";
+  width: 10rem;
+  padding-top: 0.5rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  height: 0.2rem;
+  display: block;
+  background-color: #1a17f7;
 }
 
 .heading-line2::before {
@@ -11682,6 +11831,10 @@ fieldset:disabled .btn {
   border: 1px solid #9926f0;
 }
 
+.borpriBlue {
+  border: 1px solid #1a17f7;
+}
+
 .our-services {
   position: relative;
   padding: 1rem 0;
@@ -11715,6 +11868,11 @@ fieldset:disabled .btn {
   color: #9926f0;
 }
 
+.iconBlue {
+  font-size: 2.5rem;
+  color: #1a17f7;
+}
+
 .display-3--title {
   font-size: 1.8rem;
   text-transform: capitalize;
@@ -11724,6 +11882,18 @@ fieldset:disabled .btn {
   background-clip: text;
   -webkit-background-clip: text;
   background-image: linear-gradient(to right, #9926f0, #d122e3);
+  -webkit-text-fill-color: transparent;
+}
+
+.display-3--titleBlue {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: "Poppins" sans-serif;
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right, #1a17f7, #4c7ce2);
   -webkit-text-fill-color: transparent;
 }
 
@@ -11737,11 +11907,28 @@ fieldset:disabled .btn {
   background: linear-gradient(to right, #9926f0, #d122e3);
 }
 
+.achievementsBlue {
+  position: relative;
+  padding: 0;
+  background: linear-gradient(to right, #1a17f7, #4c7ce2);
+}
+
 .gradient {
   background: linear-gradient(to right, #9926f0, #d122e3);
 }
 
+.gradientBlue {
+  background: linear-gradient(to right, #1a17f7, #4c7ce2);
+}
+
 .achievements_card {
+  background-color: white;
+  padding: 2rem 1.25rem;
+  height: 250px;
+  text-align: center;
+}
+
+.achievements_cardBlue {
   background-color: white;
   padding: 2rem 1.25rem;
   height: 250px;
@@ -11753,8 +11940,20 @@ fieldset:disabled .btn {
   color: #9926f0;
 }
 
+.achievements_cardBlue i {
+  font-size: 1.5rem;
+  color: #1a17f7;
+}
+
 .ratings i {
   color: #9926f0;
+  font-size: 1rem;
+  position: absolute;
+  top: 40%;
+}
+
+.ratingsBlue i {
+  color: #1a17f7;
   font-size: 1rem;
   position: absolute;
   top: 40%;
@@ -11810,8 +12009,20 @@ fieldset:disabled .btn {
   transform: translate(-50%, -50%);
 }
 
+.achievements_picBlue {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .achievements_pic img {
   border: 0.1rem solid #9926f0;
+}
+
+.achievements_picBlue img {
+  border: 0.1rem solid #1a17f7;
 }
 
 .achievements_name {
@@ -11838,7 +12049,17 @@ fieldset:disabled .btn {
   background: linear-gradient(to right, #9926f0, #d122e3);
 }
 
+.portfolioBlue {
+  padding: 0;
+  position: relative;
+  background: linear-gradient(to right, #1a17f7, #4c7ce2);
+}
+
 .portfolio button {
+  text-transform: capitalize;
+}
+
+.portfolioBlue button {
   text-transform: capitalize;
 }
 
@@ -11851,7 +12072,21 @@ fieldset:disabled .btn {
   border-top: 0.5rem solid #d122e3;
 }
 
+.portfolio-boxBlue {
+  position: relative;
+  width: 100%;
+  height: 18.5rem;
+  overflow: hidden;
+  margin-bottom: 1.2rem;
+  border-top: 0.5rem solid #4c7ce2;
+}
+
 .portfolio-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-boxBlue img {
   width: 100%;
   height: 100%;
 }
@@ -11873,10 +12108,20 @@ fieldset:disabled .btn {
   visibility: hidden;
 }
 
+.portfolio-infoBlue {
+  background-color: #1a17f7;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
 .caption {
   text-align: center;
   color: white;
-
   position: absolute;
   top: 50%;
   left: 50%;
@@ -11889,6 +12134,13 @@ fieldset:disabled .btn {
 }
 
 .portfolio-box:hover .portfolio-info {
+  visibility: visible;
+  opacity: 1;
+  transition-duration: 1000ms;
+  transition-property: all;
+}
+
+.portfolio-boxBlue:hover .portfolio-infoBlue {
   visibility: visible;
   opacity: 1;
   transition-duration: 1000ms;
@@ -12001,6 +12253,10 @@ transition-property: all; */
   background: linear-gradient(to right, #9926f0, #d122e3);
 }
 
+.experienceBlue {
+  background: linear-gradient(to right, #1a17f7, #4c7ce2);
+}
+
 .expimage {
   width: 40px;
   height: 40px;
@@ -12009,6 +12265,10 @@ transition-property: all; */
 
 .exp-class {
   background: linear-gradient(to right, #d122e3 , #9926f0);
+}
+
+.exp-classBlue {
+  background: linear-gradient(to right, #4c7ce2, #1a17f7);
 }
 
 .work-desc {
@@ -12034,6 +12294,15 @@ transition-property: all; */
   margin-bottom: 0.7rem;
 }
 
+.cta-info-lisBlue {
+  position: relative;
+  display: block;
+  list-style-type: none;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  margin-bottom: 0.7rem;
+}
+
 .cta-info-lis li:before {
   font-family: "Font Awesome 5 Free";
   content: "\f0a3";
@@ -12041,6 +12310,39 @@ transition-property: all; */
   font-weight: 600;
   margin-right: 0.5rem;
   font-size: 1.2rem;
+}
+
+.cta-info-lisBlue li:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0a3";
+  color: #1a17f7;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.coloritborder {
+  border-color: #d122e3;
+}
+
+.coloritborderBlue {
+  border-color: #1a17f7;
+}
+
+.colorit {
+  color: #d122e3;
+}
+
+.coloritBlue {
+  color: #1a17f7;
+}
+
+.comp {
+  color: #9926f0;
+}
+
+.compBlue {
+  color: #1a17f7;
 }
 
 /*# sourceMappingURL=style.css.map */
