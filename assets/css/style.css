@@ -12349,7 +12349,15 @@ transition-property: all; */
   border: 1px solid #9926f0;
 }
 
+.form-border:focus {
+  border: 1px solid #9926f0;
+}
+
 .form-borderBlue {
+  border: 1px solid #1a17f7;
+}
+
+.form-borderBlue:focus {
   border: 1px solid #1a17f7;
 }
 
