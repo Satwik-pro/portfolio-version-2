@@ -12277,6 +12277,10 @@ transition-property: all; */
   overflow: scroll;
 }
 
+.company-image {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 767px) {
   .work-desc {
     background-color: white;
