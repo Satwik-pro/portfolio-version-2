@@ -12365,4 +12365,18 @@ transition-property: all; */
   border: 1px solid #1a17f7;
 }
 
+.fadeleft {
+  transition: 1.5s;
+  opacity: 0;
+  transition-property: opacity, transform;
+  transform: translate3d(100px, 0, 0);
+}
+
+.faderight {
+  transition: 1.5s;
+  opacity: 0;
+  transition-property: opacity, transform;
+  transform: translate3d(-100px, 0, 0);
+}
+
 /*# sourceMappingURL=style.css.map */
