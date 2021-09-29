@@ -291,14 +291,18 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" style="background-color: white; color: black;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><span id="COMP" class="comp">Companies</span></a>
               <ul class="dropdown-menu">
-                <li><a id="DDCOMPID1" href="#scrollspyHeading1" style="color: #9926f0; text-decoration: none; margin-left: 5px;">ClearExam</a></li>
+                <li style="cursor: pointer;"><a id="DDCOMPID1" onclick="scrollCompany(this)" style="color: #9926f0; text-decoration: none; margin-left: 5px;">ClearExam</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a id="DDCOMPID2" href="#scrollspyHeading2" style="color: #9926f0; text-decoration: none; margin-left: 5px;">PupilFirst School</a></li>
+                <li style="cursor: pointer;"><a id="DDCOMPID2" onclick="scrollCompany(this)" style="color: #9926f0; text-decoration: none; margin-left: 5px;">PupilFirst School</a></li>
               </ul>
             </li>
           </ul>
         </nav>
-        <div class="work-desc" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+
+        <div class="work-desc" data-bs-spy="scroll" data-bs-offset="0" tabindex="0">
+
+          <!-- ONE -->
+
           <div id="scrollspyHeading1" style="display: flex;">
             <img src="images/clearexamlogo.jfif" alt="" class="expimage">
             <h3 id="DISPLAYID1" class="display-3--title mt-1">ClearExam</h3>
@@ -321,6 +325,9 @@
             </span>
           </button>
           <br><br><br><br>
+
+          <!-- TWO -->
+
           <div id="scrollspyHeading2" style="display: flex;">
             <img src="images/pupilfirstlogo.jfif" alt="" class="expimage">
             <h3 id="DISPLAYID2" class="display-3--title mt-1">PupilFirst School</h3>
@@ -386,6 +393,8 @@
         </div>
       </div>
 
+      <!-- ONE -->
+
       <div class="container">
         <div class="row">
           <!-- PC -->
@@ -443,6 +452,8 @@
           </div>
         </div>
 
+        <!-- TWO -->
+
         <div class="row">
           <!-- PC -->
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start pc-2">
@@ -498,6 +509,8 @@
             </div>
           </div>
         </div>
+
+        <!-- THREE -->
 
         <div class="row">
           <!-- PC -->
@@ -557,6 +570,8 @@
           </div>
         </div>
 
+        <!-- FOUR -->
+
         <div class="row">
           <!-- PC -->
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start pc-2">
@@ -613,6 +628,8 @@
           </div>
         </div>
 
+        <!-- FIVE -->
+
         <div class="row">
           <!-- PC -->
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 pc-1">
@@ -666,6 +683,8 @@
             </div>
           </div>
         </div>
+
+        <!-- SIX -->
 
         <div class="row">
           <!-- PC -->
@@ -722,6 +741,8 @@
             </div>
           </div>
         </div>
+
+        <!-- SEVEN -->
 
         <div class="row">
           <!-- PC -->
@@ -1791,6 +1812,21 @@
     } else {
       document.getElementById("PROJECTIMGID13").style = "";
       document.getElementById("PROJECTDESCID7").style = "";
+    }
+  }
+</script>
+
+<script>
+  function scrollCompany(html) {
+    if(html.id == "DDCOMPID1") {
+      document.querySelector(".work-desc").scrollTop = 0;
+    } else {
+      if(window.innerWidth >= 533)
+      document.querySelector(".work-desc").scrollTop = 394;
+      else if(window.innerWidth >= 400)
+      document.querySelector(".work-desc").scrollTop = 486;
+      else
+      document.querySelector(".work-desc").scrollTop = 515;
     }
   }
 </script>
