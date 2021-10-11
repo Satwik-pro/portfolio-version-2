@@ -1001,9 +1001,9 @@
 
             </div>
             <div class="text-center">
-              <button class="btn btn-outline-light fas fa-long-arrow-alt-left" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <button id="left-slide" class="btn btn-outline-light fas fa-long-arrow-alt-left" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
             </button>
-            <button class="btn btn-outline-light fas fa-long-arrow-alt-right" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <button id="right-slide" class="btn btn-outline-light fas fa-long-arrow-alt-right" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
             </button>
             </div>
           </div>
@@ -1764,6 +1764,26 @@
 
     close_modal();
   }
+</script>
+
+<script>
+  document.addEventListener('keydown', (e) => {
+    const key = event.key;
+    if(key === "ArrowLeft") {
+      document.getElementById('left-slide').click();
+      document.getElementById('left-slide').style = "background-color: white; color: black;";
+    }
+    else if(key === "ArrowRight") {
+      document.getElementById('right-slide').click();
+      document.getElementById('right-slide').style = "background-color: white; color: black;";
+    }
+
+    setTimeout(removeEffect, 500);
+    function removeEffect() {
+      document.getElementById('left-slide').style = "";
+      document.getElementById('right-slide').style = "";
+    }
+  });
 </script>
 
 <script>
