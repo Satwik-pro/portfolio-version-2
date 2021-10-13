@@ -1038,7 +1038,7 @@
               <div class="accordion" id="accordionExample">
                 <div class="accordion-item shadow mb-3">
                   <h2 class="accordion-header" id="headingOne">
-                    <button id="ACRBTNID1" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button id="ACRBTNID1" class="accordion-button not-collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                       Competitive Prgramming in C++
                     </button>
                   </h2>
@@ -1764,6 +1764,34 @@
 
     close_modal();
   }
+</script>
+
+<script>
+  document.addEventListener('keydown', (e) => {
+  const key = event.key;
+  var total = 5;
+  var cutlen = 8;
+  var current = document.getElementsByClassName('not-collapsed')[0].id.slice(cutlen);
+  var acrbtnid = "ACRBTNID";
+  if(key === "ArrowUp") {
+    if(Number(current) != 1) {
+      document.getElementsByClassName('not-collapsed')[0].classList.add('collapsed');
+      document.getElementsByClassName('not-collapsed')[0].classList.remove('not-collapsed');
+      current--;
+      document.getElementById(acrbtnid + current).classList.add('not-collapsed');
+      document.getElementById(acrbtnid + current).click();
+    }
+  }
+  else if(key === "ArrowDown") {
+    if(Number(current) != total) {
+      document.getElementsByClassName('not-collapsed')[0].classList.add('collapsed');
+      document.getElementsByClassName('not-collapsed')[0].classList.remove('not-collapsed');
+      current++;
+      document.getElementById(acrbtnid + current).classList.add('not-collapsed');
+      document.getElementById(acrbtnid + current).click();
+    }
+  }
+});
 </script>
 
 <script>
