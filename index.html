@@ -81,7 +81,7 @@
                 world problems.</span
               >
             </h1>
-            <button id="BUTTONID2" type="button" class="rounded-pill btn-rounded" onclick="window.open('images/SatwiksResume.pdf')">
+            <button id="BUTTONID2" type="button" class="rounded-pill btn-rounded" onclick="window.open('images/Satwik_Resume.pdf')">
               My Resume
               <span>
                 <i class="fas fa-arrow-right"></i>
@@ -1366,7 +1366,7 @@
 
     <div id="img-modal" class="img-modal d-none">
       <span id="img-modal-close" class="img-modal-close" onclick="closeImgModal()">&times;</span>
-      <img src="images/p12.JPG" id="img-modal-content" class="img-modal-content">
+      <img src="" id="img-modal-content" class="img-modal-content">
       <div id="img-modal-caption" class="img-modal-caption"></div>
     </div>
 
@@ -1885,11 +1885,16 @@
 
 <script>
   function imageModal(html) {
-    document.getElementById('img-modal-content').src = html.previousElementSibling.src;
-    document.getElementById('img-modal').classList.remove('d-none');
+    debugger;
+    if(document.getElementById('img-modal').classList.contains('d-none')) {
+      document.getElementById('img-modal-content').src = html.previousElementSibling.src;
+      document.getElementById('img-modal-caption').innerHTML = html.firstElementChild.firstElementChild.innerHTML + '<br>' + html.firstElementChild.firstElementChild.nextElementSibling.innerHTML;
+      document.getElementById('img-modal').classList.remove('d-none');
+    }
   }
 
   function closeImgModal() {
+    if(!document.getElementById('img-modal').classList.contains('d-none'))
     document.getElementById('img-modal').classList.add('d-none');
   }
 </script>
