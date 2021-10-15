@@ -6767,7 +6767,7 @@ fieldset:disabled .btn {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1030;
+  z-index: 1;
 }
 
 .fixed-bottom {
@@ -12070,6 +12070,7 @@ fieldset:disabled .btn {
   overflow: hidden;
   margin-bottom: 1.2rem;
   border-top: 0.5rem solid #d122e3;
+  cursor: pointer;
 }
 
 .portfolio-boxBlue {
@@ -12079,6 +12080,7 @@ fieldset:disabled .btn {
   overflow: hidden;
   margin-bottom: 1.2rem;
   border-top: 0.5rem solid #4c7ce2;
+  cursor: pointer;
 }
 
 .portfolio-box img {
@@ -12377,6 +12379,73 @@ transition-property: all; */
   opacity: 0;
   transition-property: opacity, transform;
   transform: translate3d(-100px, 0, 0);
+}
+
+.img-modal {
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.img-modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  opacity: 1 !important;
+  max-width: 1200px;
+  border: 3px solid white;
+}
+
+.img-modal-caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 1200px;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  margin-top: 32px;
+}
+
+.img-modal-content, .img-modal-caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-atransform:scale(0)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+.img-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.img-modal-close:hover,
+.img-modal-close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
