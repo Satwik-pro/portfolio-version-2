@@ -201,7 +201,7 @@
         <div class="row">
           <div class="col-md-4">
             <div class="companies_logo-box shadow-sm">
-              <img src="images/cr.JPG" alt="" />
+              <img src="images/offiqllogo" alt="" />
             </div>
           </div>
 
@@ -214,6 +214,15 @@
           <div class="col-md-4">
             <div class="companies_logo-box shadow-sm">
               <img src="images/fws.JPG" alt="" />
+            </div>
+          </div>
+
+          <div class="col-md-4">
+          </div>
+
+          <div class="col-md-4">
+            <div class="companies_logo-box shadow-sm">
+              <img src="images/cr.JPG" alt="" />
             </div>
           </div>
         </div>
@@ -1885,7 +1894,6 @@
 
 <script>
   function imageModal(html) {
-    debugger;
     if(document.getElementById('img-modal').classList.contains('d-none')) {
       document.getElementById('img-modal-content').src = html.previousElementSibling.src;
       document.getElementById('img-modal-caption').innerHTML = html.firstElementChild.firstElementChild.innerHTML + '<br>' + html.firstElementChild.firstElementChild.nextElementSibling.innerHTML;
