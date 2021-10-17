@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
   </head>
-  <body id="BODYID">
+
+  <body id="BODYID" style="overflow: hidden;">
     <!-- Navbar Section -->
 
     <nav id="NAVBARID" class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
@@ -1604,7 +1605,6 @@
     document.getElementById("exampleModalCenter").classList.add("show");
     document.getElementById("exampleModalCenter").classList.add("show");
     document.getElementById("BODYID").classList.add("modal-open");
-    document.getElementById("BODYID").style = "overflow: hidden; padding-right: 17px;";
     document.getElementById("BODYFADEID").classList.add("modal-backdrop");
     document.getElementById("BODYFADEID").classList.add("fade");
     document.getElementById("BODYFADEID").classList.add("show");
@@ -1948,6 +1948,7 @@
 
 <script>
   function imageModal(html) {
+    if(window.innerWidth <= 414) return;
     if(document.getElementById('img-modal').classList.contains('d-none')) {
       document.getElementById('img-modal-content').src = html.previousElementSibling.src;
       document.getElementById('img-modal-content').setAttribute('alt', html.parentElement.parentElement.id);
@@ -1975,4 +1976,9 @@
       document.querySelector(".work-desc").scrollTop = 515;
     }
   }
+</script>
+
+<script>
+  if(window.innerWidth <= 414) document.getElementsByTagName('html')[0].style = "width: 414px; overflow-x: hidden;";
+  else document.getElementsByTagName('html')[0].style = "overflow-x: hidden;";
 </script>
