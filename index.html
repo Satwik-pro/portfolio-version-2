@@ -337,7 +337,7 @@
               <li>Led a team of 12 members</li>
               <li>Wrote code template for the quiz in HTML, CSS & JavaScript</li>
               <li>Edited the template by replacing different questions and made a total of 27 quizzes</li>
-              <li>Tech Stacks used: Replit, Blogger, VS Code, Excel & Github</li>
+              <li>Tech Stacks/Tools used: Replit, Blogger, VS Code, Excel & Github</li>
             </ul>
           </p>&emsp;
           <button id="BUTTONID3" type="button" class="rounded-pill btn-rounded coloritborder" onclick="window.open('images/ClearExam Internship Certificate.pdf')">
@@ -359,9 +359,9 @@
               <li>Job Type: Internship cum course</li>
               <li>Role: Full Stack Web Development Trainee</li>
               <li>Duration: Two months</li>
-              <li>Mentor: Mr. Prashanth Reddy Koteru & Mr. Mahesh Krishna Kumar</li>
+              <li>Mentors: Mr. Prashanth Reddy Koteru & Mr. Mahesh Krishna Kumar</li>
               <li>Made one static and two dynamic web applications</li>
-              <li>Tech Stacks used: HTML, CSS, JavaScript, Ruby on Rails, PostgreSQL, VS Code, Windows Subsystem for Linux, Heroku, Github</li>
+              <li>Tech Stacks/Tools used: HTML, CSS, JavaScript, Ruby on Rails, PostgreSQL, VS Code, Windows Subsystem for Linux, Heroku, Github</li>
             </ul>
           </p>
           &emsp;
@@ -373,6 +373,7 @@
           </button>
           <br><br>
         </div>
+
         <div id="projects"></div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
@@ -1374,9 +1375,23 @@
     </section>
 
     <div id="img-modal" class="img-modal d-none">
+      <div style="position: fixed; top: 43%; cursor: pointer;" onclick="imgModalLeft()">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="100" height="100" viewBox="0 0 24 24" stroke-width="3" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <polyline points="15 6 9 12 15 18" />
+        </svg>
+      </div>
+
       <span id="img-modal-close" class="img-modal-close" onclick="closeImgModal()">&times;</span>
       <img src="" id="img-modal-content" class="img-modal-content">
       <div id="img-modal-caption" class="img-modal-caption"></div>
+
+      <div style="position: fixed; top: 43%; right: 10px; cursor: pointer;" onclick="imgModalRight()">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="100" height="100" viewBox="0 0 24 24" stroke-width="3" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <polyline points="9 6 15 12 9 18" />
+        </svg>
+      </div>
     </div>
 
     <!-- Contact -->
@@ -1812,21 +1827,60 @@
 <script>
   document.addEventListener('keydown', (e) => {
     const key = event.key;
-    if(key === "ArrowLeft") {
-      document.getElementById('left-slide').click();
-      document.getElementById('left-slide').style = "background-color: white; color: black;";
-    }
-    else if(key === "ArrowRight") {
-      document.getElementById('right-slide').click();
-      document.getElementById('right-slide').style = "background-color: white; color: black;";
-    }
+    if(document.getElementById('img-modal').classList.contains('d-none')) {
+      if(key === "ArrowLeft") {
+        document.getElementById('left-slide').click();
+        document.getElementById('left-slide').style = "background-color: white; color: black;";
+      }
+      else if(key === "ArrowRight") {
+        document.getElementById('right-slide').click();
+        document.getElementById('right-slide').style = "background-color: white; color: black;";
+      }
 
-    setTimeout(removeEffect, 500);
-    function removeEffect() {
-      document.getElementById('left-slide').style = "";
-      document.getElementById('right-slide').style = "";
+      setTimeout(removeEffect, 500);
+      function removeEffect() {
+        document.getElementById('left-slide').style = "";
+        document.getElementById('right-slide').style = "";
+      }
+    } else {
+      if(key === "ArrowLeft") {
+        imgModalLeft();
+      } else if(key === "ArrowRight") {
+        imgModalRight();
+      } else if(key === 'Escape') {
+        closeImgModal();
+      }
     }
   });
+</script>
+
+<script>
+  function imgModalLeft() {
+    var source = document.getElementById('img-modal-content').getAttribute('alt');
+    var cur_img_no = Number(source.substring(12));
+    var img_id = 'image-number';
+    for(var i=cur_img_no - 1; i>=0 ;i--) {
+      if(!document.getElementById(img_id + i).classList.contains('d-none')) {
+        document.getElementById('img-modal-content').setAttribute('alt', img_id + i);
+        document.getElementById('img-modal-content').src = document.getElementById(img_id + i).firstChild.nextSibling.firstChild.nextSibling.src;
+        break;
+      }
+    }
+  }
+
+  function imgModalRight() {
+    var source = document.getElementById('img-modal-content').getAttribute('alt');
+    var cur_img_no = Number(source.substring(12));
+    var img_id = 'image-number';
+    var total = 17;
+    for(var i=cur_img_no + 1; i<=total ;i++) {
+      if(!document.getElementById(img_id + i).classList.contains('d-none')) {
+        document.getElementById('img-modal-content').setAttribute('alt', img_id + i);
+        document.getElementById('img-modal-content').src = document.getElementById(img_id + i).firstChild.nextSibling.firstChild.nextSibling.src;
+        break;
+      }
+    }
+  }
 </script>
 
 <script>
@@ -1896,6 +1950,7 @@
   function imageModal(html) {
     if(document.getElementById('img-modal').classList.contains('d-none')) {
       document.getElementById('img-modal-content').src = html.previousElementSibling.src;
+      document.getElementById('img-modal-content').setAttribute('alt', html.parentElement.parentElement.id);
       document.getElementById('img-modal-caption').innerHTML = html.firstElementChild.firstElementChild.innerHTML + '<br>' + html.firstElementChild.firstElementChild.nextElementSibling.innerHTML;
       document.getElementById('img-modal').classList.remove('d-none');
     }
