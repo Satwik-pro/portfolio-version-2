@@ -7,6 +7,9 @@
     <title>Satwik's Portfolio</title>
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <!-- <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
   </head>
 
   <body id="BODYID" style="overflow: hidden;">
@@ -1595,8 +1598,23 @@
       crossorigin="anonymous"
     ></script>
 
+    <button id="capture-btn" class="capture-btn box-shadow d-none" onclick="download();"><span id="material-icons" class="material-icons">camera</span></button>
+    <a href="" download="" id="download-me" class="d-none"> Download </a>
+
   </body>
 </html>
+
+<script>
+  function zoomOutMobile() {
+    var viewport = document.querySelector('meta[name="viewport"]');
+
+    if ( viewport ) {
+      viewport.content = "initial-scale=0.905";
+    }
+  }
+
+  zoomOutMobile();
+</script>
 
 <script>
   window.onload =
@@ -1627,6 +1645,14 @@
       document.getElementById("navbar-tog").classList.add("collapsed");
       document.getElementById("navbarNav").classList.remove("show");
     }
+</script>
+
+<script>
+  document.getElementById('download-me').href = window.location.href;
+  document.getElementById('download-me').download = window.location.href;
+  function download() {
+      document.getElementById('download-me').click();
+  }
 </script>
 
 <script>
@@ -1778,6 +1804,7 @@
     document.getElementById("Subject").classList.add("form-borderBlue");
     document.getElementById("Message").classList.remove("form-border");
     document.getElementById("Message").classList.add("form-borderBlue");
+    document.getElementById("capture-btn").classList.add("capture-btnBlue");
 
     // PICTURES
 

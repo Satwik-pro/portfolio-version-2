@@ -12448,4 +12448,42 @@ transition-property: all; */
   cursor: pointer;
 }
 
+.capture-btn:hover {
+  transform: rotate(720deg);
+}
+
+.capture-btn:focus {
+  outline: none;
+}
+
+.capture-btn {
+  color: white;
+  font-size: 20px;
+}
+
+.material-icons {
+  font-size: 24px;
+}
+
+.capture-btn {
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  z-index: 2;
+  border: none;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  transition: transform 5s;
+}
+
+.capture-btn {
+  background-color: #9926f0;
+}
+
+.capture-btnBlue {
+  background-color: #1a17f7;
+}
+
 /*# sourceMappingURL=style.css.map */
